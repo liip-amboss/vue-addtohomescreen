@@ -34,7 +34,7 @@
               class="add-button"
               :style="buttonStyle"
             >
-              {{ t('addToHomescreen') }}
+              {{ getOpt('addToHomescreenText') || t('addToHomescreen') }}
             </button>
           </div>
         </div>
