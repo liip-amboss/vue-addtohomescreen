@@ -1,11 +1,11 @@
 (function(){"use strict";try{if(typeof document!="undefined"){var e=document.createElement("style");e.appendChild(document.createTextNode(".add-to-homescreen-plugin-container .add-to-homescreen-container{z-index:10000;border-top:1px solid #e0e0e0;font-family:-apple-system,BlinkMacSystemFont,Roboto,sans-serif;width:100%;box-sizing:border-box;background:white;position:fixed;bottom:0;left:0;padding:16px;align-items:center;transition:all .5s}.add-to-homescreen-plugin-container .add-to-homescreen-container.add-to-homescreen-visible{transform:translateY(0)}.add-to-homescreen-plugin-container .add-to-homescreen-container.add-to-homescreen-hidden{transform:translateY(100%)}.add-to-homescreen-plugin-container button{cursor:pointer}.add-to-homescreen-plugin-container .close_btn{cursor:pointer;position:absolute;top:15px;right:15px;width:20px;height:20px;border:0;background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXIteCI+PGxpbmUgeDE9IjE4IiB5MT0iNiIgeDI9IjYiIHkyPSIxOCI+PC9saW5lPjxsaW5lIHgxPSI2IiB5MT0iNiIgeDI9IjE4IiB5Mj0iMTgiPjwvbGluZT48L3N2Zz4=)}.add-to-homescreen-plugin-container .flex{display:flex;flex-wrap:wrap}.add-to-homescreen-plugin-container .col{flex:1}.add-to-homescreen-plugin-container .icon{background-size:contain;background-repeat:no-repeat;background-position:center}.add-to-homescreen-plugin-container .icon-container .icon{width:60px;height:60px;display:block;line-height:60px;text-align:center;border-radius:30px;font-size:1.3rem;margin-right:15px;text-transform:uppercase}.add-to-homescreen-plugin-container .app-title{font-size:1.3rem;display:inline-block}.add-to-homescreen-plugin-container .app-content{font-size:.8rem;display:inline-block}.add-to-homescreen-plugin-container .btn-container{float:right}.add-to-homescreen-plugin-container .add-button,.add-to-homescreen-plugin-container .add-button:hover,.add-to-homescreen-plugin-container .add-button:visited{width:100%;border:0;outline:0;font-size:1rem;padding:5px}.add-to-homescreen-plugin-container .close:hover,.add-to-homescreen-plugin-container .close:focus{color:#000;text-decoration:none;cursor:pointer}.add-to-homescreen-plugin-container .modal{display:none;position:fixed;z-index:10000;left:0;top:0;width:100%;height:100%;background-color:#0006}.add-to-homescreen-plugin-container .modal-content{background-color:#fff;border-radius:1rem;text-align:center;margin:50% auto;border:1px solid #27e9b8;width:80%}.add-to-homescreen-plugin-container .modal-content ul{padding:0 0 0 15px;text-align:left;list-style-type:none}.add-to-homescreen-plugin-container .shareIOS,.add-to-homescreen-plugin-container .addIOS{width:20px;vertical-align:top}.add-to-homescreen-plugin-container .modal-content .closeModal{border:0;outline:0;font-size:1rem;padding:5px;margin-bottom:15px}")),document.head.appendChild(e)}}catch(n){console.error("vite-plugin-css-injected-by-js",n)}})();
-import { defineComponent as Ce, ref as ye, computed as _, onMounted as xe, openBlock as Me, createElementBlock as ze, createElementVNode as M, normalizeClass as Le, normalizeStyle as R, Fragment as Ie, createTextVNode as te, toDisplayString as U, createCommentVNode as Ae, h as De, render as Oe } from "vue";
+import { defineComponent as Ce, ref as ye, computed as _, onMounted as xe, openBlock as Me, createElementBlock as ze, createElementVNode as M, normalizeClass as Ie, normalizeStyle as R, Fragment as Le, createTextVNode as se, toDisplayString as q, createCommentVNode as Ae, h as Oe, render as De } from "vue";
 /*! js-cookie v3.0.1 | MIT */
 function K(n) {
-  for (var b = 1; b < arguments.length; b++) {
-    var h = arguments[b];
-    for (var m in h)
-      n[m] = h[m];
+  for (var d = 1; d < arguments.length; d++) {
+    var h = arguments[d];
+    for (var g in h)
+      n[g] = h[g];
   }
   return n;
 }
@@ -20,23 +20,23 @@ var Ee = {
     );
   }
 };
-function se(n, b) {
+function te(n, d) {
   function h(v, k, w) {
     if (!(typeof document > "u")) {
-      w = K({}, b, w), typeof w.expires == "number" && (w.expires = new Date(Date.now() + w.expires * 864e5)), w.expires && (w.expires = w.expires.toUTCString()), v = encodeURIComponent(v).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape);
+      w = K({}, d, w), typeof w.expires == "number" && (w.expires = new Date(Date.now() + w.expires * 864e5)), w.expires && (w.expires = w.expires.toUTCString()), v = encodeURIComponent(v).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape);
       var z = "";
-      for (var j in w)
-        w[j] && (z += "; " + j, w[j] !== !0 && (z += "=" + w[j].split(";")[0]));
+      for (var S in w)
+        w[S] && (z += "; " + S, w[S] !== !0 && (z += "=" + w[S].split(";")[0]));
       return document.cookie = v + "=" + n.write(k, v) + z;
     }
   }
-  function m(v) {
+  function g(v) {
     if (!(typeof document > "u" || arguments.length && !v)) {
       for (var k = document.cookie ? document.cookie.split("; ") : [], w = {}, z = 0; z < k.length; z++) {
-        var j = k[z].split("="), x = j.slice(1).join("=");
+        var S = k[z].split("="), x = S.slice(1).join("=");
         try {
-          var T = decodeURIComponent(j[0]);
-          if (w[T] = n.read(x, T), v === T)
+          var j = decodeURIComponent(S[0]);
+          if (w[j] = n.read(x, j), v === j)
             break;
         } catch {
         }
@@ -47,7 +47,7 @@ function se(n, b) {
   return Object.create(
     {
       set: h,
-      get: m,
+      get: g,
       remove: function(v, k) {
         h(
           v,
@@ -58,19 +58,19 @@ function se(n, b) {
         );
       },
       withAttributes: function(v) {
-        return se(this.converter, K({}, this.attributes, v));
+        return te(this.converter, K({}, this.attributes, v));
       },
       withConverter: function(v) {
-        return se(K({}, this.converter, v), this.attributes);
+        return te(K({}, this.converter, v), this.attributes);
       }
     },
     {
-      attributes: { value: Object.freeze(b) },
+      attributes: { value: Object.freeze(d) },
       converter: { value: Object.freeze(n) }
     }
   );
 }
-var de = se(Ee, { path: "/" });
+var de = te(Ee, { path: "/" });
 const Pe = {
   en_GB: {
     addToHomescreen: "Add to homescreen",
@@ -318,7 +318,7 @@ const Pe = {
   const n = ["file:", "cordova:", "capacitor:"];
   return window.matchMedia("(display-mode: standalone)").matches || window.location && window.location.protocol && n.indexOf(window.location.protocol) !== -1;
 };
-var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {}, Y = {}, Ue = {
+var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {}, Y = {}, qe = {
   get exports() {
     return Y;
   },
@@ -326,44 +326,44 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
     Y = n;
   }
 };
-(function(n, b) {
-  (function(h, m) {
-    var v = "1.0.33", k = "", w = "?", z = "function", j = "undefined", x = "object", T = "string", A = "major", o = "model", a = "name", e = "type", i = "vendor", r = "version", d = "architecture", g = "console", t = "mobile", s = "tablet", S = "smarttv", D = "wearable", le = "embedded", J = 350, X = "Amazon", H = "Apple", ce = "ASUS", ue = "BlackBerry", L = "Browser", B = "Chrome", je = "Edge", q = "Firefox", Z = "Google", be = "Huawei", $ = "LG", ee = "Microsoft", we = "Motorola", V = "Opera", ie = "Samsung", pe = "Sharp", G = "Sony", oe = "Xiaomi", ae = "Zebra", me = "Facebook", Te = function(l, p) {
-      var c = {};
-      for (var y in l)
-        p[y] && p[y].length % 2 === 0 ? c[y] = p[y].concat(l[y]) : c[y] = l[y];
-      return c;
-    }, Q = function(l) {
-      for (var p = {}, c = 0; c < l.length; c++)
-        p[l[c].toUpperCase()] = l[c];
+(function(n, d) {
+  (function(h, g) {
+    var v = "1.0.33", k = "", w = "?", z = "function", S = "undefined", x = "object", j = "string", A = "major", a = "model", o = "name", e = "type", i = "vendor", r = "version", l = "architecture", m = "console", s = "mobile", t = "tablet", T = "smarttv", O = "wearable", le = "embedded", J = 350, X = "Amazon", U = "Apple", ce = "ASUS", ue = "BlackBerry", I = "Browser", H = "Chrome", Se = "Edge", B = "Firefox", Z = "Google", be = "Huawei", $ = "LG", ee = "Microsoft", we = "Motorola", V = "Opera", ie = "Samsung", pe = "Sharp", G = "Sony", ae = "Xiaomi", oe = "Zebra", ge = "Facebook", je = function(c, p) {
+      var u = {};
+      for (var y in c)
+        p[y] && p[y].length % 2 === 0 ? u[y] = p[y].concat(c[y]) : u[y] = c[y];
+      return u;
+    }, Q = function(c) {
+      for (var p = {}, u = 0; u < c.length; u++)
+        p[c[u].toUpperCase()] = c[u];
       return p;
-    }, ge = function(l, p) {
-      return typeof l === T ? O(p).indexOf(O(l)) !== -1 : !1;
-    }, O = function(l) {
-      return l.toLowerCase();
-    }, Se = function(l) {
-      return typeof l === T ? l.replace(/[^\d\.]/g, k).split(".")[0] : m;
-    }, re = function(l, p) {
-      if (typeof l === T)
-        return l = l.replace(/^\s\s*/, k), typeof p === j ? l : l.substring(0, J);
-    }, E = function(l, p) {
-      for (var c = 0, y, u, F, f, P, C; c < p.length && !P; ) {
-        var ve = p[c], ke = p[c + 1];
-        for (y = u = 0; y < ve.length && !P; )
-          if (P = ve[y++].exec(l), P)
+    }, me = function(c, p) {
+      return typeof c === j ? D(p).indexOf(D(c)) !== -1 : !1;
+    }, D = function(c) {
+      return c.toLowerCase();
+    }, Te = function(c) {
+      return typeof c === j ? c.replace(/[^\d\.]/g, k).split(".")[0] : g;
+    }, re = function(c, p) {
+      if (typeof c === j)
+        return c = c.replace(/^\s\s*/, k), typeof p === S ? c : c.substring(0, J);
+    }, E = function(c, p) {
+      for (var u = 0, y, b, F, f, P, C; u < p.length && !P; ) {
+        var ve = p[u], ke = p[u + 1];
+        for (y = b = 0; y < ve.length && !P; )
+          if (P = ve[y++].exec(c), P)
             for (F = 0; F < ke.length; F++)
-              C = P[++u], f = ke[F], typeof f === x && f.length > 0 ? f.length === 2 ? typeof f[1] == z ? this[f[0]] = f[1].call(this, C) : this[f[0]] = f[1] : f.length === 3 ? typeof f[1] === z && !(f[1].exec && f[1].test) ? this[f[0]] = C ? f[1].call(this, C, f[2]) : m : this[f[0]] = C ? C.replace(f[1], f[2]) : m : f.length === 4 && (this[f[0]] = C ? f[3].call(this, C.replace(f[1], f[2])) : m) : this[f] = C || m;
-        c += 2;
+              C = P[++b], f = ke[F], typeof f === x && f.length > 0 ? f.length === 2 ? typeof f[1] == z ? this[f[0]] = f[1].call(this, C) : this[f[0]] = f[1] : f.length === 3 ? typeof f[1] === z && !(f[1].exec && f[1].test) ? this[f[0]] = C ? f[1].call(this, C, f[2]) : g : this[f[0]] = C ? C.replace(f[1], f[2]) : g : f.length === 4 && (this[f[0]] = C ? f[3].call(this, C.replace(f[1], f[2])) : g) : this[f] = C || g;
+        u += 2;
       }
-    }, ne = function(l, p) {
-      for (var c in p)
-        if (typeof p[c] === x && p[c].length > 0) {
-          for (var y = 0; y < p[c].length; y++)
-            if (ge(p[c][y], l))
-              return c === w ? m : c;
-        } else if (ge(p[c], l))
-          return c === w ? m : c;
-      return l;
+    }, ne = function(c, p) {
+      for (var u in p)
+        if (typeof p[u] === x && p[u].length > 0) {
+          for (var y = 0; y < p[u].length; y++)
+            if (me(p[u][y], c))
+              return u === w ? g : u;
+        } else if (me(p[u], c))
+          return u === w ? g : u;
+      return c;
     }, Ne = {
       "1.0": "/8",
       "1.2": "/1",
@@ -391,12 +391,12 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /\b(?:crmo|crios)\/([\w\.]+)/i
           // Chrome for Android/iOS
         ],
-        [r, [a, "Chrome"]],
+        [r, [o, "Chrome"]],
         [
           /edg(?:e|ios|a)?\/([\w\.]+)/i
           // Microsoft Edge
         ],
-        [r, [a, "Edge"]],
+        [r, [o, "Edge"]],
         [
           // Presto based
           /(opera mini)\/([-\w\.]+)/i,
@@ -406,17 +406,17 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(opera)(?:.+version\/|[\/ ]+)([\w\.]+)/i
           // Opera
         ],
-        [a, r],
+        [o, r],
         [
           /opios[\/ ]+([\w\.]+)/i
           // Opera mini on iphone >= 8.0
         ],
-        [r, [a, V + " Mini"]],
+        [r, [o, V + " Mini"]],
         [
           /\bopr\/([\w\.]+)/i
           // Opera Webkit
         ],
-        [r, [a, V]],
+        [r, [o, V]],
         [
           // Mixed
           /(kindle)\/([\w\.]+)/i,
@@ -436,93 +436,93 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(weibo)__([\d\.]+)/i
           // Weibo
         ],
-        [a, r],
+        [o, r],
         [
           /(?:\buc? ?browser|(?:juc.+)ucweb)[\/ ]?([\w\.]+)/i
           // UCBrowser
         ],
-        [r, [a, "UC" + L]],
+        [r, [o, "UC" + I]],
         [
           /microm.+\bqbcore\/([\w\.]+)/i,
           // WeChat Desktop for Windows Built-in Browser
           /\bqbcore\/([\w\.]+).+microm/i
         ],
-        [r, [a, "WeChat(Win) Desktop"]],
+        [r, [o, "WeChat(Win) Desktop"]],
         [
           /micromessenger\/([\w\.]+)/i
           // WeChat
         ],
-        [r, [a, "WeChat"]],
+        [r, [o, "WeChat"]],
         [
           /konqueror\/([\w\.]+)/i
           // Konqueror
         ],
-        [r, [a, "Konqueror"]],
+        [r, [o, "Konqueror"]],
         [
           /trident.+rv[: ]([\w\.]{1,9})\b.+like gecko/i
           // IE11
         ],
-        [r, [a, "IE"]],
+        [r, [o, "IE"]],
         [
           /yabrowser\/([\w\.]+)/i
           // Yandex
         ],
-        [r, [a, "Yandex"]],
+        [r, [o, "Yandex"]],
         [
           /(avast|avg)\/([\w\.]+)/i
           // Avast/AVG Secure Browser
         ],
-        [[a, /(.+)/, "$1 Secure " + L], r],
+        [[o, /(.+)/, "$1 Secure " + I], r],
         [
           /\bfocus\/([\w\.]+)/i
           // Firefox Focus
         ],
-        [r, [a, q + " Focus"]],
+        [r, [o, B + " Focus"]],
         [
           /\bopt\/([\w\.]+)/i
           // Opera Touch
         ],
-        [r, [a, V + " Touch"]],
+        [r, [o, V + " Touch"]],
         [
           /coc_coc\w+\/([\w\.]+)/i
           // Coc Coc Browser
         ],
-        [r, [a, "Coc Coc"]],
+        [r, [o, "Coc Coc"]],
         [
           /dolfin\/([\w\.]+)/i
           // Dolphin
         ],
-        [r, [a, "Dolphin"]],
+        [r, [o, "Dolphin"]],
         [
           /coast\/([\w\.]+)/i
           // Opera Coast
         ],
-        [r, [a, V + " Coast"]],
+        [r, [o, V + " Coast"]],
         [
           /miuibrowser\/([\w\.]+)/i
           // MIUI Browser
         ],
-        [r, [a, "MIUI " + L]],
+        [r, [o, "MIUI " + I]],
         [
           /fxios\/([-\w\.]+)/i
           // Firefox for iOS
         ],
-        [r, [a, q]],
+        [r, [o, B]],
         [
           /\bqihu|(qi?ho?o?|360)browser/i
           // 360
         ],
-        [[a, "360 " + L]],
+        [[o, "360 " + I]],
         [
           /(oculus|samsung|sailfish|huawei)browser\/([\w\.]+)/i
         ],
-        [[a, /(.+)/, "$1 " + L], r],
+        [[o, /(.+)/, "$1 " + I], r],
         [
           // Oculus/Samsung/Sailfish/Huawei Browser
           /(comodo_dragon)\/([\w\.]+)/i
           // Comodo Dragon
         ],
-        [[a, /_/g, " "], r],
+        [[o, /_/g, " "], r],
         [
           /(electron)\/([\w\.]+) safari/i,
           // Electron-based App
@@ -531,7 +531,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /m?(qqbrowser|baiduboxapp|2345Explorer)[\/ ]?([\w\.]+)/i
           // QQBrowser/Baidu App/2345 Browser
         ],
-        [a, r],
+        [o, r],
         [
           /(metasr)[\/ ]?([\w\.]+)/i,
           // SouGouBrowser
@@ -540,13 +540,13 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /\[(linkedin)app\]/i
           // LinkedIn App for iOS & Android
         ],
-        [a],
+        [o],
         [
           // WebView
           /((?:fban\/fbios|fb_iab\/fb4a)(?!.+fbav)|;fbav\/([\w\.]+);)/i
           // Facebook App for iOS & Android
         ],
-        [[a, me], r],
+        [[o, ge], r],
         [
           /safari (line)\/([\w\.]+)/i,
           // Line App for iOS
@@ -555,62 +555,62 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(chromium|instagram)[\/ ]([-\w\.]+)/i
           // Chromium/Instagram
         ],
-        [a, r],
+        [o, r],
         [
           /\bgsa\/([\w\.]+) .*safari\//i
           // Google Search Appliance on iOS
         ],
-        [r, [a, "GSA"]],
+        [r, [o, "GSA"]],
         [
           /headlesschrome(?:\/([\w\.]+)| )/i
           // Chrome Headless
         ],
-        [r, [a, B + " Headless"]],
+        [r, [o, H + " Headless"]],
         [
           / wv\).+(chrome)\/([\w\.]+)/i
           // Chrome WebView
         ],
-        [[a, B + " WebView"], r],
+        [[o, H + " WebView"], r],
         [
           /droid.+ version\/([\w\.]+)\b.+(?:mobile safari|safari)/i
           // Android Browser
         ],
-        [r, [a, "Android " + L]],
+        [r, [o, "Android " + I]],
         [
           /(chrome|omniweb|arora|[tizenoka]{5} ?browser)\/v?([\w\.]+)/i
           // Chrome/OmniWeb/Arora/Tizen/Nokia
         ],
-        [a, r],
+        [o, r],
         [
           /version\/([\w\.\,]+) .*mobile\/\w+ (safari)/i
           // Mobile Safari
         ],
-        [r, [a, "Mobile Safari"]],
+        [r, [o, "Mobile Safari"]],
         [
           /version\/([\w(\.|\,)]+) .*(mobile ?safari|safari)/i
           // Safari & Safari Mobile
         ],
-        [r, a],
+        [r, o],
         [
           /webkit.+?(mobile ?safari|safari)(\/[\w\.]+)/i
           // Safari < 3.0
         ],
-        [a, [r, ne, Ne]],
+        [o, [r, ne, Ne]],
         [
           /(webkit|khtml)\/([\w\.]+)/i
         ],
-        [a, r],
+        [o, r],
         [
           // Gecko based
           /(navigator|netscape\d?)\/([-\w\.]+)/i
           // Netscape
         ],
-        [[a, "Netscape"], r],
+        [[o, "Netscape"], r],
         [
           /mobile vr; rv:([\w\.]+)\).+firefox/i
           // Firefox Reality
         ],
-        [r, [a, q + " Reality"]],
+        [r, [o, B + " Reality"]],
         [
           /ekiohf.+(flow)\/([\w\.]+)/i,
           // Flow
@@ -630,59 +630,59 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(links) \(([\w\.]+)/i
           // Links
         ],
-        [a, r],
+        [o, r],
         [
           /(cobalt)\/([\w\.]+)/i
           // Cobalt
         ],
-        [a, [r, /master.|lts./, ""]]
+        [o, [r, /master.|lts./, ""]]
       ],
       cpu: [
         [
           /(?:(amd|x(?:(?:86|64)[-_])?|wow|win)64)[;\)]/i
           // AMD64 (x64)
         ],
-        [[d, "amd64"]],
+        [[l, "amd64"]],
         [
           /(ia32(?=;))/i
           // IA32 (quicktime)
         ],
-        [[d, O]],
+        [[l, D]],
         [
           /((?:i[346]|x)86)[;\)]/i
           // IA32 (x86)
         ],
-        [[d, "ia32"]],
+        [[l, "ia32"]],
         [
           /\b(aarch64|arm(v?8e?l?|_?64))\b/i
           // ARM64
         ],
-        [[d, "arm64"]],
+        [[l, "arm64"]],
         [
           /\b(arm(?:v[67])?ht?n?[fl]p?)\b/i
           // ARMHF
         ],
-        [[d, "armhf"]],
+        [[l, "armhf"]],
         [
           // PocketPC mistakenly identified as PowerPC
           /windows (ce|mobile); ppc;/i
         ],
-        [[d, "arm"]],
+        [[l, "arm"]],
         [
           /((?:ppc|powerpc)(?:64)?)(?: mac|;|\))/i
           // PowerPC
         ],
-        [[d, /ower/, k, O]],
+        [[l, /ower/, k, D]],
         [
           /(sun4\w)[;\)]/i
           // SPARC
         ],
-        [[d, "sparc"]],
+        [[l, "sparc"]],
         [
           /((?:avr32|ia64(?=;))|68k(?=\))|\barm(?=v(?:[1-7]|[5-7]1)l?|;|eabi)|(?=atmel )avr|(?:irix|mips|sparc)(?:64)?\b|pa-risc)/i
           // IA64, 68K, ARM/64, AVR/32, IRIX/64, MIPS/64, SPARC/64, PA-RISC
         ],
-        [[d, O]]
+        [[l, D]]
       ],
       device: [
         [
@@ -693,40 +693,40 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           // Samsung
           /\b(sch-i[89]0\d|shw-m380s|sm-[ptx]\w{2,4}|gt-[pn]\d{2,4}|sgh-t8[56]9|nexus 10)/i
         ],
-        [o, [i, ie], [e, s]],
+        [a, [i, ie], [e, t]],
         [
           /\b((?:s[cgp]h|gt|sm)-\w+|galaxy nexus)/i,
           /samsung[- ]([-\w]+)/i,
           /sec-(sgh\w+)/i
         ],
-        [o, [i, ie], [e, t]],
+        [a, [i, ie], [e, s]],
         [
           // Apple
           /\((ip(?:hone|od)[\w ]*);/i
           // iPod/iPhone
         ],
-        [o, [i, H], [e, t]],
+        [a, [i, U], [e, s]],
         [
           /\((ipad);[-\w\),; ]+apple/i,
           // iPad
           /applecoremedia\/[\w\.]+ \((ipad)/i,
           /\b(ipad)\d\d?,\d\d?[;\]].+ios/i
         ],
-        [o, [i, H], [e, s]],
+        [a, [i, U], [e, t]],
         [
           /(macintosh);/i
         ],
-        [o, [i, H]],
+        [a, [i, U]],
         [
           // Huawei
           /\b((?:ag[rs][23]?|bah2?|sht?|btv)-a?[lw]\d{2})\b(?!.+d\/s)/i
         ],
-        [o, [i, be], [e, s]],
+        [a, [i, be], [e, t]],
         [
           /(?:huawei|honor)([-\w ]+)[;\)]/i,
           /\b(nexus 6p|\w{2,4}e?-[atu]?[ln][\dx][012359c][adn]?)\b(?!.+d\/s)/i
         ],
-        [o, [i, be], [e, t]],
+        [a, [i, be], [e, s]],
         [
           // Xiaomi
           /\b(poco[\w ]+)(?: bui|\))/i,
@@ -740,90 +740,90 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /\b(mi[-_ ]?(?:a\d|one|one[_ ]plus|note lte|max|cc)?[_ ]?(?:\d?\w?)[_ ]?(?:plus|se|lite)?)(?: bui|\))/i
           // Xiaomi Mi
         ],
-        [[o, /_/g, " "], [i, oe], [e, t]],
+        [[a, /_/g, " "], [i, ae], [e, s]],
         [
           /\b(mi[-_ ]?(?:pad)(?:[\w_ ]+))(?: bui|\))/i
           // Mi Pad tablets
         ],
-        [[o, /_/g, " "], [i, oe], [e, s]],
+        [[a, /_/g, " "], [i, ae], [e, t]],
         [
           // OPPO
           /; (\w+) bui.+ oppo/i,
           /\b(cph[12]\d{3}|p(?:af|c[al]|d\w|e[ar])[mt]\d0|x9007|a101op)\b/i
         ],
-        [o, [i, "OPPO"], [e, t]],
+        [a, [i, "OPPO"], [e, s]],
         [
           // Vivo
           /vivo (\w+)(?: bui|\))/i,
           /\b(v[12]\d{3}\w?[at])(?: bui|;)/i
         ],
-        [o, [i, "Vivo"], [e, t]],
+        [a, [i, "Vivo"], [e, s]],
         [
           // Realme
           /\b(rmx[12]\d{3})(?: bui|;|\))/i
         ],
-        [o, [i, "Realme"], [e, t]],
+        [a, [i, "Realme"], [e, s]],
         [
           // Motorola
           /\b(milestone|droid(?:[2-4x]| (?:bionic|x2|pro|razr))?:?( 4g)?)\b[\w ]+build\//i,
           /\bmot(?:orola)?[- ](\w*)/i,
           /((?:moto[\w\(\) ]+|xt\d{3,4}|nexus 6)(?= bui|\)))/i
         ],
-        [o, [i, we], [e, t]],
+        [a, [i, we], [e, s]],
         [
           /\b(mz60\d|xoom[2 ]{0,2}) build\//i
         ],
-        [o, [i, we], [e, s]],
+        [a, [i, we], [e, t]],
         [
           // LG
           /((?=lg)?[vl]k\-?\d{3}) bui| 3\.[-\w; ]{10}lg?-([06cv9]{3,4})/i
         ],
-        [o, [i, $], [e, s]],
+        [a, [i, $], [e, t]],
         [
           /(lm(?:-?f100[nv]?|-[\w\.]+)(?= bui|\))|nexus [45])/i,
           /\blg[-e;\/ ]+((?!browser|netcast|android tv)\w+)/i,
           /\blg-?([\d\w]+) bui/i
         ],
-        [o, [i, $], [e, t]],
+        [a, [i, $], [e, s]],
         [
           // Lenovo
           /(ideatab[-\w ]+)/i,
           /lenovo ?(s[56]000[-\w]+|tab(?:[\w ]+)|yt[-\d\w]{6}|tb[-\d\w]{6})/i
         ],
-        [o, [i, "Lenovo"], [e, s]],
+        [a, [i, "Lenovo"], [e, t]],
         [
           // Nokia
           /(?:maemo|nokia).*(n900|lumia \d+)/i,
           /nokia[-_ ]?([-\w\.]*)/i
         ],
-        [[o, /_/g, " "], [i, "Nokia"], [e, t]],
+        [[a, /_/g, " "], [i, "Nokia"], [e, s]],
         [
           // Google
           /(pixel c)\b/i
           // Google Pixel C
         ],
-        [o, [i, Z], [e, s]],
+        [a, [i, Z], [e, t]],
         [
           /droid.+; (pixel[\daxl ]{0,6})(?: bui|\))/i
           // Google Pixel
         ],
-        [o, [i, Z], [e, t]],
+        [a, [i, Z], [e, s]],
         [
           // Sony
           /droid.+ (a?\d[0-2]{2}so|[c-g]\d{4}|so[-gl]\w+|xq-a\w[4-7][12])(?= bui|\).+chrome\/(?![1-6]{0,1}\d\.))/i
         ],
-        [o, [i, G], [e, t]],
+        [a, [i, G], [e, s]],
         [
           /sony tablet [ps]/i,
           /\b(?:sony)?sgp\w+(?: bui|\))/i
         ],
-        [[o, "Xperia Tablet"], [i, G], [e, s]],
+        [[a, "Xperia Tablet"], [i, G], [e, t]],
         [
           // OnePlus
           / (kb2005|in20[12]5|be20[12][59])\b/i,
           /(?:one)?(?:plus)? (a\d0\d\d)(?: b|\))/i
         ],
-        [o, [i, "OnePlus"], [e, t]],
+        [a, [i, "OnePlus"], [e, s]],
         [
           // Amazon
           /(alexa)webm/i,
@@ -832,39 +832,39 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(kf[a-z]+)( bui|\)).+silk\//i
           // Kindle Fire HD
         ],
-        [o, [i, X], [e, s]],
+        [a, [i, X], [e, t]],
         [
           /((?:sd|kf)[0349hijorstuw]+)( bui|\)).+silk\//i
           // Fire Phone
         ],
-        [[o, /(.+)/g, "Fire Phone $1"], [i, X], [e, t]],
+        [[a, /(.+)/g, "Fire Phone $1"], [i, X], [e, s]],
         [
           // BlackBerry
           /(playbook);[-\w\),; ]+(rim)/i
           // BlackBerry PlayBook
         ],
-        [o, i, [e, s]],
+        [a, i, [e, t]],
         [
           /\b((?:bb[a-f]|st[hv])100-\d)/i,
           /\(bb10; (\w+)/i
           // BlackBerry 10
         ],
-        [o, [i, ue], [e, t]],
+        [a, [i, ue], [e, s]],
         [
           // Asus
           /(?:\b|asus_)(transfo[prime ]{4,10} \w+|eeepc|slider \w+|nexus 7|padfone|p00[cj])/i
         ],
-        [o, [i, ce], [e, s]],
+        [a, [i, ce], [e, t]],
         [
           / (z[bes]6[027][012][km][ls]|zenfone \d\w?)\b/i
         ],
-        [o, [i, ce], [e, t]],
+        [a, [i, ce], [e, s]],
         [
           // HTC
           /(nexus 9)/i
           // HTC Nexus 9
         ],
-        [o, [i, "HTC"], [e, s]],
+        [a, [i, "HTC"], [e, t]],
         [
           /(htc)[-;_ ]{1,2}([\w ]+(?=\)| bui)|\w+)/i,
           // HTC
@@ -873,23 +873,23 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(alcatel|geeksphone|nexian|panasonic|sony(?!-bra))[-_ ]?([-\w]*)/i
           // Alcatel/GeeksPhone/Nexian/Panasonic/Sony
         ],
-        [i, [o, /_/g, " "], [e, t]],
+        [i, [a, /_/g, " "], [e, s]],
         [
           // Acer
           /droid.+; ([ab][1-7]-?[0178a]\d\d?)/i
         ],
-        [o, [i, "Acer"], [e, s]],
+        [a, [i, "Acer"], [e, t]],
         [
           // Meizu
           /droid.+; (m[1-5] note) bui/i,
           /\bmz-([-\w]{2,})/i
         ],
-        [o, [i, "Meizu"], [e, t]],
+        [a, [i, "Meizu"], [e, s]],
         [
           // Sharp
           /\b(sh-?[altvz]?\d\d[a-ekm]?)/i
         ],
-        [o, [i, pe], [e, t]],
+        [a, [i, pe], [e, s]],
         [
           // MIXED
           /(blackberry|benq|palm(?=\-)|sonyericsson|acer|asus|dell|meizu|motorola|polytron)[-_ ]?([-\w]*)/i,
@@ -907,7 +907,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(oppo) ?([\w ]+) bui/i
           // OPPO
         ],
-        [i, o, [e, t]],
+        [i, a, [e, s]],
         [
           /(archos) (gamepad2?)/i,
           // Archos
@@ -928,146 +928,146 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(vodafone) ([\w ]+)(?:\)| bui)/i
           // Vodafone
         ],
-        [i, o, [e, s]],
+        [i, a, [e, t]],
         [
           /(surface duo)/i
           // Surface Duo
         ],
-        [o, [i, ee], [e, s]],
+        [a, [i, ee], [e, t]],
         [
           /droid [\d\.]+; (fp\du?)(?: b|\))/i
           // Fairphone
         ],
-        [o, [i, "Fairphone"], [e, t]],
+        [a, [i, "Fairphone"], [e, s]],
         [
           /(u304aa)/i
           // AT&T
         ],
-        [o, [i, "AT&T"], [e, t]],
+        [a, [i, "AT&T"], [e, s]],
         [
           /\bsie-(\w*)/i
           // Siemens
         ],
-        [o, [i, "Siemens"], [e, t]],
+        [a, [i, "Siemens"], [e, s]],
         [
           /\b(rct\w+) b/i
           // RCA Tablets
         ],
-        [o, [i, "RCA"], [e, s]],
+        [a, [i, "RCA"], [e, t]],
         [
           /\b(venue[\d ]{2,7}) b/i
           // Dell Venue Tablets
         ],
-        [o, [i, "Dell"], [e, s]],
+        [a, [i, "Dell"], [e, t]],
         [
           /\b(q(?:mv|ta)\w+) b/i
           // Verizon Tablet
         ],
-        [o, [i, "Verizon"], [e, s]],
+        [a, [i, "Verizon"], [e, t]],
         [
           /\b(?:barnes[& ]+noble |bn[rt])([\w\+ ]*) b/i
           // Barnes & Noble Tablet
         ],
-        [o, [i, "Barnes & Noble"], [e, s]],
+        [a, [i, "Barnes & Noble"], [e, t]],
         [
           /\b(tm\d{3}\w+) b/i
         ],
-        [o, [i, "NuVision"], [e, s]],
+        [a, [i, "NuVision"], [e, t]],
         [
           /\b(k88) b/i
           // ZTE K Series Tablet
         ],
-        [o, [i, "ZTE"], [e, s]],
+        [a, [i, "ZTE"], [e, t]],
         [
           /\b(nx\d{3}j) b/i
           // ZTE Nubia
         ],
-        [o, [i, "ZTE"], [e, t]],
+        [a, [i, "ZTE"], [e, s]],
         [
           /\b(gen\d{3}) b.+49h/i
           // Swiss GEN Mobile
         ],
-        [o, [i, "Swiss"], [e, t]],
+        [a, [i, "Swiss"], [e, s]],
         [
           /\b(zur\d{3}) b/i
           // Swiss ZUR Tablet
         ],
-        [o, [i, "Swiss"], [e, s]],
+        [a, [i, "Swiss"], [e, t]],
         [
           /\b((zeki)?tb.*\b) b/i
           // Zeki Tablets
         ],
-        [o, [i, "Zeki"], [e, s]],
+        [a, [i, "Zeki"], [e, t]],
         [
           /\b([yr]\d{2}) b/i,
           /\b(dragon[- ]+touch |dt)(\w{5}) b/i
           // Dragon Touch Tablet
         ],
-        [[i, "Dragon Touch"], o, [e, s]],
+        [[i, "Dragon Touch"], a, [e, t]],
         [
           /\b(ns-?\w{0,9}) b/i
           // Insignia Tablets
         ],
-        [o, [i, "Insignia"], [e, s]],
+        [a, [i, "Insignia"], [e, t]],
         [
           /\b((nxa|next)-?\w{0,9}) b/i
           // NextBook Tablets
         ],
-        [o, [i, "NextBook"], [e, s]],
+        [a, [i, "NextBook"], [e, t]],
         [
           /\b(xtreme\_)?(v(1[045]|2[015]|[3469]0|7[05])) b/i
           // Voice Xtreme Phones
         ],
-        [[i, "Voice"], o, [e, t]],
+        [[i, "Voice"], a, [e, s]],
         [
           /\b(lvtel\-)?(v1[12]) b/i
           // LvTel Phones
         ],
-        [[i, "LvTel"], o, [e, t]],
+        [[i, "LvTel"], a, [e, s]],
         [
           /\b(ph-1) /i
           // Essential PH-1
         ],
-        [o, [i, "Essential"], [e, t]],
+        [a, [i, "Essential"], [e, s]],
         [
           /\b(v(100md|700na|7011|917g).*\b) b/i
           // Envizen Tablets
         ],
-        [o, [i, "Envizen"], [e, s]],
+        [a, [i, "Envizen"], [e, t]],
         [
           /\b(trio[-\w\. ]+) b/i
           // MachSpeed Tablets
         ],
-        [o, [i, "MachSpeed"], [e, s]],
+        [a, [i, "MachSpeed"], [e, t]],
         [
           /\btu_(1491) b/i
           // Rotor Tablets
         ],
-        [o, [i, "Rotor"], [e, s]],
+        [a, [i, "Rotor"], [e, t]],
         [
           /(shield[\w ]+) b/i
           // Nvidia Shield Tablets
         ],
-        [o, [i, "Nvidia"], [e, s]],
+        [a, [i, "Nvidia"], [e, t]],
         [
           /(sprint) (\w+)/i
           // Sprint Phones
         ],
-        [i, o, [e, t]],
+        [i, a, [e, s]],
         [
           /(kin\.[onetw]{3})/i
           // Microsoft Kin
         ],
-        [[o, /\./g, " "], [i, ee], [e, t]],
+        [[a, /\./g, " "], [i, ee], [e, s]],
         [
           /droid.+; (cc6666?|et5[16]|mc[239][23]x?|vc8[03]x?)\)/i
           // Zebra
         ],
-        [o, [i, ae], [e, s]],
+        [a, [i, oe], [e, t]],
         [
           /droid.+; (ec30|ps20|tc[2-8]\d[kx])\)/i
         ],
-        [o, [i, ae], [e, t]],
+        [a, [i, oe], [e, s]],
         [
           ///////////////////
           // CONSOLES
@@ -1077,22 +1077,22 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(nintendo) ([wids3utch]+)/i
           // Nintendo
         ],
-        [i, o, [e, g]],
+        [i, a, [e, m]],
         [
           /droid.+; (shield) bui/i
           // Nvidia
         ],
-        [o, [i, "Nvidia"], [e, g]],
+        [a, [i, "Nvidia"], [e, m]],
         [
           /(playstation [345portablevi]+)/i
           // Playstation
         ],
-        [o, [i, G], [e, g]],
+        [a, [i, G], [e, m]],
         [
           /\b(xbox(?: one)?(?!; xbox))[\); ]/i
           // Microsoft Xbox
         ],
-        [o, [i, ee], [e, g]],
+        [a, [i, ee], [e, m]],
         [
           ///////////////////
           // SMARTTVS
@@ -1100,59 +1100,59 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /smart-tv.+(samsung)/i
           // Samsung
         ],
-        [i, [e, S]],
+        [i, [e, T]],
         [
           /hbbtv.+maple;(\d+)/i
         ],
-        [[o, /^/, "SmartTV"], [i, ie], [e, S]],
+        [[a, /^/, "SmartTV"], [i, ie], [e, T]],
         [
           /(nux; netcast.+smarttv|lg (netcast\.tv-201\d|android tv))/i
           // LG SmartTV
         ],
-        [[i, $], [e, S]],
+        [[i, $], [e, T]],
         [
           /(apple) ?tv/i
           // Apple TV
         ],
-        [i, [o, H + " TV"], [e, S]],
+        [i, [a, U + " TV"], [e, T]],
         [
           /crkey/i
           // Google Chromecast
         ],
-        [[o, B + "cast"], [i, Z], [e, S]],
+        [[a, H + "cast"], [i, Z], [e, T]],
         [
           /droid.+aft(\w)( bui|\))/i
           // Fire TV
         ],
-        [o, [i, X], [e, S]],
+        [a, [i, X], [e, T]],
         [
           /\(dtv[\);].+(aquos)/i,
           /(aquos-tv[\w ]+)\)/i
           // Sharp
         ],
-        [o, [i, pe], [e, S]],
+        [a, [i, pe], [e, T]],
         [
           /(bravia[\w ]+)( bui|\))/i
           // Sony
         ],
-        [o, [i, G], [e, S]],
+        [a, [i, G], [e, T]],
         [
           /(mitv-\w{5}) bui/i
           // Xiaomi
         ],
-        [o, [i, oe], [e, S]],
+        [a, [i, ae], [e, T]],
         [
           /\b(roku)[\dx]*[\)\/]((?:dvp-)?[\d\.]*)/i,
           // Roku
           /hbbtv\/\d+\.\d+\.\d+ +\([\w ]*; *(\w[^;]*);([^;]*)/i
           // HbbTV devices
         ],
-        [[i, re], [o, re], [e, S]],
+        [[i, re], [a, re], [e, T]],
         [
           /\b(android tv|smart[- ]?tv|opera tv|tv; rv:)\b/i
           // SmartTV from Unidentified Vendors
         ],
-        [[e, S]],
+        [[e, T]],
         [
           ///////////////////
           // WEARABLES
@@ -1160,21 +1160,21 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /((pebble))app/i
           // Pebble
         ],
-        [i, o, [e, D]],
+        [i, a, [e, O]],
         [
           /droid.+; (glass) \d/i
           // Google Glass
         ],
-        [o, [i, Z], [e, D]],
+        [a, [i, Z], [e, O]],
         [
           /droid.+; (wt63?0{2,3})\)/i
         ],
-        [o, [i, ae], [e, D]],
+        [a, [i, oe], [e, O]],
         [
           /(quest( 2)?)/i
           // Oculus Quest
         ],
-        [o, [i, me], [e, D]],
+        [a, [i, ge], [e, O]],
         [
           ///////////////////
           // EMBEDDED
@@ -1190,39 +1190,39 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /droid .+?; ([^;]+?)(?: bui|\) applew).+? mobile safari/i
           // Android Phones from Unidentified Vendors
         ],
-        [o, [e, t]],
+        [a, [e, s]],
         [
           /droid .+?; ([^;]+?)(?: bui|\) applew).+?(?! mobile) safari/i
           // Android Tablets from Unidentified Vendors
         ],
-        [o, [e, s]],
+        [a, [e, t]],
         [
           /\b((tablet|tab)[;\/]|focus\/\d(?!.+mobile))/i
           // Unidentifiable Tablet
         ],
-        [[e, s]],
+        [[e, t]],
         [
           /(phone|mobile(?:[;\/]| [ \w\/\.]*safari)|pda(?=.+windows ce))/i
           // Unidentifiable Mobile
         ],
-        [[e, t]],
+        [[e, s]],
         [
           /(android[-\w\. ]{0,9});.+buil/i
           // Generic Android Device
         ],
-        [o, [i, "Generic"]]
+        [a, [i, "Generic"]]
       ],
       engine: [
         [
           /windows.+ edge\/([\w\.]+)/i
           // EdgeHTML
         ],
-        [r, [a, je + "HTML"]],
+        [r, [o, Se + "HTML"]],
         [
           /webkit\/537\.36.+chrome\/(?!27)([\w\.]+)/i
           // Blink
         ],
-        [r, [a, "Blink"]],
+        [r, [o, "Blink"]],
         [
           /(presto)\/([\w\.]+)/i,
           // Presto
@@ -1235,12 +1235,12 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(icab)[\/ ]([23]\.[\d\.]+)/i
           // iCab
         ],
-        [a, r],
+        [o, r],
         [
           /rv\:([\w\.]{1,9})\b.+(gecko)/i
           // Gecko
         ],
-        [r, a]
+        [r, o]
       ],
       os: [
         [
@@ -1248,7 +1248,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /microsoft (windows) (vista|xp)/i
           // Windows (iTunes)
         ],
-        [a, r],
+        [o, r],
         [
           /(windows) nt 6\.2; (arm)/i,
           // Windows RT
@@ -1256,30 +1256,30 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           // Windows Phone
           /(windows)[\/ ]?([ntce\d\. ]+\w)(?!.+xbox)/i
         ],
-        [a, [r, ne, fe]],
+        [o, [r, ne, fe]],
         [
           /(win(?=3|9|n)|win 9x )([nt\d\.]+)/i
         ],
-        [[a, "Windows"], [r, ne, fe]],
+        [[o, "Windows"], [r, ne, fe]],
         [
           // iOS/macOS
           /ip[honead]{2,4}\b(?:.*os ([\w]+) like mac|; opera)/i,
           // iOS
           /cfnetwork\/.+darwin/i
         ],
-        [[r, /_/g, "."], [a, "iOS"]],
+        [[r, /_/g, "."], [o, "iOS"]],
         [
           /(mac os x) ?([\w\. ]*)/i,
           /(macintosh|mac_powerpc\b)(?!.+haiku)/i
           // Mac OS
         ],
-        [[a, "Mac OS"], [r, /_/g, "."]],
+        [[o, "Mac OS"], [r, /_/g, "."]],
         [
           // Mobile OSes
           /droid ([\w\.]+)\b.+(android[- ]x86|harmonyos)/i
           // Android-x86/HarmonyOS
         ],
-        [r, a],
+        [r, o],
         [
           // Android/WebOS/QNX/Bada/RIM/Maemo/MeeGo/Sailfish OS
           /(android|webos|qnx|bada|rim tablet os|maemo|meego|sailfish)[-\/ ]?([\w\.]*)/i,
@@ -1290,39 +1290,39 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /\((series40);/i
           // Series 40
         ],
-        [a, r],
+        [o, r],
         [
           /\(bb(10);/i
           // BlackBerry 10
         ],
-        [r, [a, ue]],
+        [r, [o, ue]],
         [
           /(?:symbian ?os|symbos|s60(?=;)|series60)[-\/ ]?([\w\.]*)/i
           // Symbian
         ],
-        [r, [a, "Symbian"]],
+        [r, [o, "Symbian"]],
         [
           /mozilla\/[\d\.]+ \((?:mobile|tablet|tv|mobile; [\w ]+); rv:.+ gecko\/([\w\.]+)/i
           // Firefox OS
         ],
-        [r, [a, q + " OS"]],
+        [r, [o, B + " OS"]],
         [
           /web0s;.+rt(tv)/i,
           /\b(?:hp)?wos(?:browser)?\/([\w\.]+)/i
           // WebOS
         ],
-        [r, [a, "webOS"]],
+        [r, [o, "webOS"]],
         [
           // Google Chromecast
           /crkey\/([\d\.]+)/i
           // Google Chromecast
         ],
-        [r, [a, B + "cast"]],
+        [r, [o, H + "cast"]],
         [
           /(cros) [\w]+ ([\w\.]+\w)/i
           // Chromium OS
         ],
-        [[a, "Chromium OS"], r],
+        [[o, "Chromium OS"], r],
         [
           // Console
           /(nintendo|playstation) ([wids345portablevuch]+)/i,
@@ -1347,12 +1347,12 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(haiku) (\w+)/i
           // Haiku
         ],
-        [a, r],
+        [o, r],
         [
           /(sunos) ?([\w\.\d]*)/i
           // Solaris
         ],
-        [[a, "Solaris"], r],
+        [[o, "Solaris"], r],
         [
           /((?:open)?solaris)[-\/ ]?([\w\.]*)/i,
           // Solaris
@@ -1363,27 +1363,27 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(unix) ?([\w\.]*)/i
           // UNIX
         ],
-        [a, r]
+        [o, r]
       ]
-    }, N = function(l, p) {
-      if (typeof l === x && (p = l, l = m), !(this instanceof N))
-        return new N(l, p).getResult();
-      var c = l || (typeof h !== j && h.navigator && h.navigator.userAgent ? h.navigator.userAgent : k), y = p ? Te(he, p) : he;
+    }, N = function(c, p) {
+      if (typeof c === x && (p = c, c = g), !(this instanceof N))
+        return new N(c, p).getResult();
+      var u = c || (typeof h !== S && h.navigator && h.navigator.userAgent ? h.navigator.userAgent : k), y = p ? je(he, p) : he;
       return this.getBrowser = function() {
-        var u = {};
-        return u[a] = m, u[r] = m, E.call(u, c, y.browser), u.major = Se(u.version), u;
+        var b = {};
+        return b[o] = g, b[r] = g, E.call(b, u, y.browser), b.major = Te(b.version), b;
       }, this.getCPU = function() {
-        var u = {};
-        return u[d] = m, E.call(u, c, y.cpu), u;
+        var b = {};
+        return b[l] = g, E.call(b, u, y.cpu), b;
       }, this.getDevice = function() {
-        var u = {};
-        return u[i] = m, u[o] = m, u[e] = m, E.call(u, c, y.device), u;
+        var b = {};
+        return b[i] = g, b[a] = g, b[e] = g, E.call(b, u, y.device), b;
       }, this.getEngine = function() {
-        var u = {};
-        return u[a] = m, u[r] = m, E.call(u, c, y.engine), u;
+        var b = {};
+        return b[o] = g, b[r] = g, E.call(b, u, y.engine), b;
       }, this.getOS = function() {
-        var u = {};
-        return u[a] = m, u[r] = m, E.call(u, c, y.os), u;
+        var b = {};
+        return b[o] = g, b[r] = g, E.call(b, u, y.os), b;
       }, this.getResult = function() {
         return {
           ua: this.getUA(),
@@ -1394,27 +1394,27 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           cpu: this.getCPU()
         };
       }, this.getUA = function() {
-        return c;
-      }, this.setUA = function(u) {
-        return c = typeof u === T && u.length > J ? re(u, J) : u, this;
-      }, this.setUA(c), this;
+        return u;
+      }, this.setUA = function(b) {
+        return u = typeof b === j && b.length > J ? re(b, J) : b, this;
+      }, this.setUA(u), this;
     };
-    N.VERSION = v, N.BROWSER = Q([a, r, A]), N.CPU = Q([d]), N.DEVICE = Q([o, i, e, g, t, S, s, D, le]), N.ENGINE = N.OS = Q([a, r]), n.exports && (b = n.exports = N), b.UAParser = N;
-    var I = typeof h !== j && (h.jQuery || h.Zepto);
-    if (I && !I.ua) {
+    N.VERSION = v, N.BROWSER = Q([o, r, A]), N.CPU = Q([l]), N.DEVICE = Q([a, i, e, m, s, T, t, O, le]), N.ENGINE = N.OS = Q([o, r]), n.exports && (d = n.exports = N), d.UAParser = N;
+    var L = typeof h !== S && (h.jQuery || h.Zepto);
+    if (L && !L.ua) {
       var W = new N();
-      I.ua = W.getResult(), I.ua.get = function() {
+      L.ua = W.getResult(), L.ua.get = function() {
         return W.getUA();
-      }, I.ua.set = function(l) {
-        W.setUA(l);
+      }, L.ua.set = function(c) {
+        W.setUA(c);
         var p = W.getResult();
-        for (var c in p)
-          I.ua[c] = p[c];
+        for (var u in p)
+          L.ua[u] = p[u];
       };
     }
   })(typeof window == "object" ? window : Re);
-})(Ue, Y);
-const He = Y, Be = Ce({
+})(qe, Y);
+const Ue = Y, He = Ce({
   name: "addToHomescreen",
   props: {
     title: {
@@ -1426,6 +1426,42 @@ const He = Y, Be = Ce({
       required: !1
     },
     buttonText: {
+      type: String,
+      required: !1
+    },
+    addMessagesIos1: {
+      type: String,
+      required: !1
+    },
+    addMessagesIos2: {
+      type: String,
+      required: !1
+    },
+    addMessagesAndroid: {
+      type: String,
+      required: !1
+    },
+    addMessagesWindowsChrome: {
+      type: String,
+      required: !1
+    },
+    addMessagesWindowsFirefox: {
+      type: String,
+      required: !1
+    },
+    addMessagesMacosFirefox: {
+      type: String,
+      required: !1
+    },
+    addMessagesMacosChrome: {
+      type: String,
+      required: !1
+    },
+    addMessagesMacosSafari: {
+      type: String,
+      required: !1
+    },
+    addMessagesOthers: {
       type: String,
       required: !1
     },
@@ -1471,86 +1507,86 @@ const He = Y, Be = Ce({
     }
   },
   setup(n) {
-    const b = (d) => n ? n[d] : void 0, h = (d) => {
-      const g = n ? n[d] : d;
-      return g && typeof g == "string" ? g : d;
-    }, m = b("lang") || "en_GB", v = Pe[m], k = (d) => d.split(".").reduce((g, t) => {
-      if (g)
-        return g[t];
-    }, v), w = ye(), z = _(() => document.title), j = _(() => window.location.href), x = _(() => z.value.substring(0, 1)), T = ye(!1), A = () => {
-      let d = new Date();
-      const g = n.expires || 365;
-      d.setDate(d.getDate() + g), de.set("addToHomescreenCalled", "true", {
-        expires: d
+    const d = (l) => n ? n[l] : void 0, h = (l) => {
+      const m = n ? n[l] : l;
+      return m && typeof m == "string" ? m : l;
+    }, g = d("lang") || "en_GB", v = Pe[g], k = (l) => l.split(".").reduce((m, s) => {
+      if (m)
+        return m[s];
+    }, v), w = ye(), z = _(() => document.title), S = _(() => window.location.href), x = _(() => z.value.substring(0, 1)), j = ye(!1), A = () => {
+      let l = new Date();
+      const m = n.expires || 365;
+      l.setDate(l.getDate() + m), de.set("addToHomescreenCalled", "true", {
+        expires: l
       });
-    }, o = _(() => {
-      const d = b("iconColor"), g = b("iconPath"), t = b("iconTextColor");
+    }, a = _(() => {
+      const l = d("iconColor"), m = d("iconPath"), s = d("iconTextColor");
       return {
-        backgroundColor: d && typeof d == "string" ? d : "transparent",
-        backgroundImage: g ? "url(" + b("iconPath") + ")" : "none",
-        color: t && typeof t == "string" ? t : "black"
+        backgroundColor: l && typeof l == "string" ? l : "transparent",
+        backgroundImage: m ? "url(" + d("iconPath") + ")" : "none",
+        color: s && typeof s == "string" ? s : "black"
       };
-    }), a = _(() => {
-      const d = b("buttonTextColor"), g = b("buttonColor");
+    }), o = _(() => {
+      const l = d("buttonTextColor"), m = d("buttonColor");
       return {
-        color: d && d === "string" ? d : "white",
-        backgroundColor: g && typeof g == "string" ? g : "black"
+        color: l && l === "string" ? l : "white",
+        backgroundColor: m && typeof m == "string" ? m : "black"
       };
     }), e = () => {
-      A(), T.value = !1;
+      A(), j.value = !1;
     }, i = () => {
-      const d = document.getElementById("IOSmodal");
-      d && (d.style.display = "none");
+      const l = document.getElementById("IOSmodal");
+      l && (l.style.display = "none");
     }, r = () => {
-      const g = new He().getResult(), t = {
-        os: g.os.name,
-        browser: g.browser.name
-      }, s = document.getElementById("IOSmodal");
-      w.value ? w.value.prompt() : t.os === "iOS" ? s && (s.style.display = "block") : t.os === "Android" ? alert(k("addMessages.android")) : t.os === "Windows" && (t.browser === "Chrome" || t.browser === "Edge") ? alert(k("addMessages.windows.chrome")) : t.os === "Windows" && t.browser === "Firefox" ? alert(k("addMessages.windows.firefox")) : t.os === "Mac OS" ? "ontouchstart" in window || navigator.maxTouchPoints > 0 ? s && (s.style.display = "block") : t.browser === "Firefox" ? alert(k("addMessages.macos.firefox")) : t.browser === "Chrome" ? alert(k("addMessages.macos.chrome")) : t.browser === "Safari" && alert(k("addMessages.macos.safari")) : alert(k("addMessages.others")), T.value = !1;
+      const m = new Ue().getResult(), s = {
+        os: m.os.name,
+        browser: m.browser.name
+      }, t = document.getElementById("IOSmodal");
+      w.value ? w.value.prompt() : s.os === "iOS" ? t && (t.style.display = "block") : s.os === "Android" ? alert(d("addMessagesAndroid") || k("addMessages.android")) : s.os === "Windows" && (s.browser === "Chrome" || s.browser === "Edge") ? alert(d("addMessagesWindowsChrome") || k("addMessages.windows.chrome")) : s.os === "Windows" && s.browser === "Firefox" ? alert(d("addMessagesWindowsFirefox") || k("addMessages.windows.firefox")) : s.os === "Mac OS" ? "ontouchstart" in window || navigator.maxTouchPoints > 0 ? t && (t.style.display = "block") : s.browser === "Firefox" ? alert(d("addMessagesMacosFirefox") || k("addMessages.macos.firefox")) : s.browser === "Chrome" ? alert(d("addMessagesMacosChrome") || k("addMessages.macos.chrome")) : s.browser === "Safari" && alert(d("addMessagesMacosSafari") || k("addMessages.macos.safari")) : alert(d("addMessagesOthers") || k("addMessages.others")), j.value = !1;
     };
     return xe(() => {
-      window.addEventListener("beforeinstallprompt", (g) => {
-        g.preventDefault(), w.value = g;
+      window.addEventListener("beforeinstallprompt", (m) => {
+        m.preventDefault(), w.value = m;
       });
-      const d = de.get("addToHomescreenCalled");
-      !_e() && !d && (T.value = !0, A());
+      const l = de.get("addToHomescreenCalled");
+      !_e() && !l && (j.value = !0, A());
     }), {
       t: k,
       addToHomescreen: r,
       closeModal: i,
       close: e,
-      buttonStyle: a,
-      iconStyle: o,
+      buttonStyle: o,
+      iconStyle: a,
       getCssOpt: h,
-      getOpt: b,
-      appUrl: j,
+      getOpt: d,
+      appUrl: S,
       firstCharTitle: x,
       appTitle: z,
-      opened: T
+      opened: j
     };
   }
-}), qe = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDMzMy4zMjQgMzMzLjMyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzMzLjMyNCAzMzMuMzI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojMjIyMjIwOyIgZD0iTTEyNS4yNTUsNTkuNTEzbDMzLjkwNy0zMy45MDd2MTQ5LjQ1MWMwLDQuMTQzLDMuMzU4LDcuNSw3LjUsNy41czcuNS0zLjM1Nyw3LjUtNy41VjI1LjYwNg0KCQlsMzMuOTA3LDMzLjkwN2MxLjQ2NCwxLjQ2NCwzLjM4NCwyLjE5Niw1LjMwMywyLjE5NnMzLjgzOS0wLjczMiw1LjMwMy0yLjE5NmMyLjkyOS0yLjkzLDIuOTI5LTcuNjc4LDAtMTAuNjA3bC00Ni43MS00Ni43MQ0KCQljLTIuOTI5LTIuOTI4LTcuNjc4LTIuOTI4LTEwLjYwNiwwbC00Ni43MSw0Ni43MWMtMi45MjksMi45My0yLjkyOSw3LjY3OCwwLDEwLjYwN0MxMTcuNTc3LDYyLjQ0MSwxMjIuMzI2LDYyLjQ0MSwxMjUuMjU1LDU5LjUxM3oNCgkJIi8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzIyMjIyMDsiIGQ9Ik0yNjMuMzI4LDg3LjU1N2gtNjEuNjQ1Yy00LjE0MiwwLTcuNSwzLjM1Ny03LjUsNy41czMuMzU4LDcuNSw3LjUsNy41aDU0LjE0NXYyMTUuNzY3SDc3LjQ5NQ0KCQlWMTAyLjU1N2g1NC4xNDVjNC4xNDIsMCw3LjUtMy4zNTcsNy41LTcuNXMtMy4zNTgtNy41LTcuNS03LjVINjkuOTk1Yy00LjE0MiwwLTcuNSwzLjM1Ny03LjUsNy41djIzMC43NjcNCgkJYzAsNC4xNDMsMy4zNTgsNy41LDcuNSw3LjVoMTkzLjMzM2M0LjE0MiwwLDcuNS0zLjM1Nyw3LjUtNy41Vjk1LjA1N0MyNzAuODI4LDkwLjkxNSwyNjcuNDcsODcuNTU3LDI2My4zMjgsODcuNTU3eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=", Ze = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTkgM0g1Yy0xLjExIDAtMiAuOS0yIDJ2MTRjMCAxLjEuODkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNWMwLTEuMS0uOS0yLTItMnptMCAxNkg1VjVoMTR2MTR6bS04LTJoMnYtNGg0di0yaC00VjdoLTJ2NEg3djJoNHoiLz48L3N2Zz4=";
-const Ve = (n, b) => {
+}), Be = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDMzMy4zMjQgMzMzLjMyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzMzLjMyNCAzMzMuMzI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojMjIyMjIwOyIgZD0iTTEyNS4yNTUsNTkuNTEzbDMzLjkwNy0zMy45MDd2MTQ5LjQ1MWMwLDQuMTQzLDMuMzU4LDcuNSw3LjUsNy41czcuNS0zLjM1Nyw3LjUtNy41VjI1LjYwNg0KCQlsMzMuOTA3LDMzLjkwN2MxLjQ2NCwxLjQ2NCwzLjM4NCwyLjE5Niw1LjMwMywyLjE5NnMzLjgzOS0wLjczMiw1LjMwMy0yLjE5NmMyLjkyOS0yLjkzLDIuOTI5LTcuNjc4LDAtMTAuNjA3bC00Ni43MS00Ni43MQ0KCQljLTIuOTI5LTIuOTI4LTcuNjc4LTIuOTI4LTEwLjYwNiwwbC00Ni43MSw0Ni43MWMtMi45MjksMi45My0yLjkyOSw3LjY3OCwwLDEwLjYwN0MxMTcuNTc3LDYyLjQ0MSwxMjIuMzI2LDYyLjQ0MSwxMjUuMjU1LDU5LjUxM3oNCgkJIi8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzIyMjIyMDsiIGQ9Ik0yNjMuMzI4LDg3LjU1N2gtNjEuNjQ1Yy00LjE0MiwwLTcuNSwzLjM1Ny03LjUsNy41czMuMzU4LDcuNSw3LjUsNy41aDU0LjE0NXYyMTUuNzY3SDc3LjQ5NQ0KCQlWMTAyLjU1N2g1NC4xNDVjNC4xNDIsMCw3LjUtMy4zNTcsNy41LTcuNXMtMy4zNTgtNy41LTcuNS03LjVINjkuOTk1Yy00LjE0MiwwLTcuNSwzLjM1Ny03LjUsNy41djIzMC43NjcNCgkJYzAsNC4xNDMsMy4zNTgsNy41LDcuNSw3LjVoMTkzLjMzM2M0LjE0MiwwLDcuNS0zLjM1Nyw3LjUtNy41Vjk1LjA1N0MyNzAuODI4LDkwLjkxNSwyNjcuNDcsODcuNTU3LDI2My4zMjgsODcuNTU3eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=", Ze = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTkgM0g1Yy0xLjExIDAtMiAuOS0yIDJ2MTRjMCAxLjEuODkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNWMwLTEuMS0uOS0yLTItMnptMCAxNkg1VjVoMTR2MTR6bS04LTJoMnYtNGg0di0yaC00VjdoLTJ2NEg3djJoNHoiLz48L3N2Zz4=";
+const Ve = (n, d) => {
   const h = n.__vccOpts || n;
-  for (const [m, v] of b)
-    h[m] = v;
+  for (const [g, v] of d)
+    h[g] = v;
   return h;
 }, Ge = { class: "add-to-homescreen-plugin-container" }, Qe = { class: "flex" }, We = { class: "icon-container" }, Fe = { class: "col" }, Ke = /* @__PURE__ */ M("br", null, null, -1), Ye = ["innerHTML"], Je = { class: "flex" }, Xe = { class: "col" }, $e = { class: "btn-container" }, ei = {
   id: "IOSmodal",
   class: "modal add-to-homescreen-visible"
-}, ii = { class: "modal-content" }, oi = /* @__PURE__ */ M("img", {
+}, ii = { class: "modal-content" }, ai = /* @__PURE__ */ M("img", {
   class: "shareIOS",
-  src: qe,
+  src: Be,
   alt: "share IOS"
-}, null, -1), ai = /* @__PURE__ */ M("img", {
+}, null, -1), oi = /* @__PURE__ */ M("img", {
   class: "addIOS",
   src: Ze,
   alt: "add IOS"
 }, null, -1);
-function ri(n, b, h, m, v, k) {
+function ri(n, d, h, g, v, k) {
   return Me(), ze("div", Ge, [
     M("div", {
-      class: Le([
+      class: Ie([
         "add-to-homescreen-container",
         n.opened ? "add-to-homescreen-visible" : "add-to-homescreen-hidden"
       ])
@@ -1561,8 +1597,8 @@ function ri(n, b, h, m, v, k) {
             class: "icon",
             style: R(n.iconStyle)
           }, [
-            n.getOpt("iconPath") ? Ae("", !0) : (Me(), ze(Ie, { key: 0 }, [
-              te(U(n.firstCharTitle), 1)
+            n.getOpt("iconPath") ? Ae("", !0) : (Me(), ze(Le, { key: 0 }, [
+              se(q(n.firstCharTitle), 1)
             ], 64))
           ], 4)
         ]),
@@ -1570,7 +1606,7 @@ function ri(n, b, h, m, v, k) {
           M("span", {
             class: "app-title",
             style: R(n.getCssOpt("titleColor"))
-          }, U(n.getOpt("title") ? n.getOpt("title") : n.appTitle), 5),
+          }, q(n.getOpt("title") ? n.getOpt("title") : n.appTitle), 5),
           Ke,
           M("span", {
             class: "app-content",
@@ -1583,56 +1619,56 @@ function ri(n, b, h, m, v, k) {
         M("div", Xe, [
           M("div", $e, [
             M("button", {
-              onClick: b[0] || (b[0] = (...w) => n.addToHomescreen && n.addToHomescreen(...w)),
+              onClick: d[0] || (d[0] = (...w) => n.addToHomescreen && n.addToHomescreen(...w)),
               class: "add-button",
               style: R(n.buttonStyle)
-            }, U(n.getOpt("buttonText") || n.t("addToHomescreen")), 5)
+            }, q(n.getOpt("buttonText") || n.t("addToHomescreen")), 5)
           ])
         ])
       ]),
       M("button", {
         class: "close_btn",
-        onClick: b[1] || (b[1] = (...w) => n.close && n.close(...w))
+        onClick: d[1] || (d[1] = (...w) => n.close && n.close(...w))
       })
     ], 2),
     M("div", ei, [
       M("div", ii, [
         M("ul", null, [
           M("li", null, [
-            te(U(n.t("addMessages.ios1")) + " ", 1),
-            oi
+            se(q(n.getOpt("addMessagesIos1") || n.t("addMessages.ios1")) + " ", 1),
+            ai
           ]),
           M("li", null, [
-            te(U(n.t("addMessages.ios2")) + " ", 1),
-            ai
+            se(q(n.getOpt("addMessagesIos2") || n.t("addMessages.ios2")) + " ", 1),
+            oi
           ])
         ]),
         M("button", {
           class: "closeModal",
           style: R(n.buttonStyle),
           label: "OK",
-          onClick: b[2] || (b[2] = (...w) => n.closeModal && n.closeModal(...w))
+          onClick: d[2] || (d[2] = (...w) => n.closeModal && n.closeModal(...w))
         }, " OK ", 4)
       ])
     ])
   ]);
 }
-const ni = /* @__PURE__ */ Ve(Be, [["render", ri]]), ti = () => {
+const ni = /* @__PURE__ */ Ve(He, [["render", ri]]), si = () => {
   const n = ["file:", "cordova:", "capacitor:"];
   return window.matchMedia("(display-mode: standalone)").matches || window.location && window.location.protocol && n.indexOf(window.location.protocol) !== -1;
 };
-function si(n) {
-  if (!ti() || !de.get("addToHomescreenCalled")) {
-    const b = De(ni, n), h = document.createElement("div");
-    return document.body.appendChild(h), Oe(b, h), b.component;
+function ti(n) {
+  if (!si() || !de.get("addToHomescreenCalled")) {
+    const d = Oe(ni, n), h = document.createElement("div");
+    return document.body.appendChild(h), De(d, h), d.component;
   }
 }
 const li = {
-  install(n, b) {
-    si(b);
+  install(n, d) {
+    ti(d);
   }
 };
 export {
   li as default,
-  si as useAddToHomescreen
+  ti as useAddToHomescreen
 };

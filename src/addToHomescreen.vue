@@ -46,11 +46,11 @@
       <div class="modal-content">
         <ul>
           <li>
-            {{ t('addMessages.ios1') }}
+            {{ getOpt('addMessagesIos1') || t('addMessages.ios1') }}
             <img class="shareIOS" src="./assets/shareios.svg" alt="share IOS" />
           </li>
           <li>
-            {{ t('addMessages.ios2') }}
+            {{ getOpt('addMessagesIos2') ||  t('addMessages.ios2') }}
             <img class="addIOS" src="./assets/addios.svg" alt="add IOS" />
           </li>
         </ul>
@@ -89,6 +89,42 @@ export default defineComponent({
       required: false,
     },
     buttonText: {
+      type: String,
+      required: false,
+    },
+    addMessagesIos1: {
+      type: String,
+      required: false,
+    },
+    addMessagesIos2: {
+      type: String,
+      required: false,
+    },
+    addMessagesAndroid: {
+      type: String,
+      required: false,
+    },
+    addMessagesWindowsChrome: {
+      type: String,
+      required: false,
+    },
+    addMessagesWindowsFirefox: {
+      type: String,
+      required: false,
+    },
+    addMessagesMacosFirefox: {
+      type: String,
+      required: false,
+    },
+    addMessagesMacosChrome: {
+      type: String,
+      required: false,
+    },
+    addMessagesMacosSafari: {
+      type: String,
+      required: false,
+    },
+    addMessagesOthers: {
       type: String,
       required: false,
     },
@@ -230,17 +266,17 @@ export default defineComponent({
         //Open IOS modal only on IOS device
         if (iosElementModal) iosElementModal.style.display = 'block';
       } else if (deviceInfos.os === 'Android') {
-        alert(t('addMessages.android'));
+        alert(getOpt('addMessagesAndroid') || t('addMessages.android'));
       } else if (
         deviceInfos.os === 'Windows' &&
         (deviceInfos.browser === 'Chrome' || deviceInfos.browser === 'Edge')
       ) {
-        alert(t('addMessages.windows.chrome'));
+        alert(getOpt('addMessagesWindowsChrome') || t('addMessages.windows.chrome'));
       } else if (
         deviceInfos.os === 'Windows' &&
         deviceInfos.browser === 'Firefox'
       ) {
-        alert(t('addMessages.windows.firefox'));
+        alert(getOpt('addMessagesWindowsFirefox') || t('addMessages.windows.firefox'));
       } else if (deviceInfos.os === 'Mac OS') {
         const isTouchDevice =
           'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -250,15 +286,15 @@ export default defineComponent({
           if (iosElementModal) iosElementModal.style.display = 'block';
         } else {
           if (deviceInfos.browser === 'Firefox') {
-            alert(t('addMessages.macos.firefox'));
+            alert(getOpt('addMessagesMacosFirefox') || t('addMessages.macos.firefox'));
           } else if (deviceInfos.browser === 'Chrome') {
-            alert(t('addMessages.macos.chrome'));
+            alert(getOpt('addMessagesMacosChrome') || t('addMessages.macos.chrome'));
           } else if (deviceInfos.browser === 'Safari') {
-            alert(t('addMessages.macos.safari'));
+            alert(getOpt('addMessagesMacosSafari') || t('addMessages.macos.safari'));
           }
         }
       } else {
-        alert(t('addMessages.others'));
+        alert(getOpt('addMessagesOthers') || t('addMessages.others'));
       }
       opened.value = false;
     };
