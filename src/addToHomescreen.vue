@@ -34,7 +34,7 @@
               class="add-button"
               :style="buttonStyle"
             >
-              {{ getOpt('addToHomescreenText') || t('addToHomescreen') }}
+              {{ getOpt('buttonText') || t('addToHomescreen') }}
             </button>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default defineComponent({
       type: String,
       required: false,
     },
-    addToHomescreenText: {
+    buttonText: {
       type: String,
       required: false,
     },
