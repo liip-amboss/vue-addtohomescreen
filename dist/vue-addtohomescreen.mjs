@@ -1,7 +1,7 @@
 (function(){"use strict";try{if(typeof document!="undefined"){var e=document.createElement("style");e.appendChild(document.createTextNode(".add-to-homescreen-plugin-container .add-to-homescreen-container{z-index:10000;border-top:1px solid #e0e0e0;font-family:-apple-system,BlinkMacSystemFont,Roboto,sans-serif;width:100%;box-sizing:border-box;background:white;position:fixed;bottom:0;left:0;padding:16px;align-items:center;transition:all .5s}.add-to-homescreen-plugin-container .add-to-homescreen-container.add-to-homescreen-visible{transform:translateY(0)}.add-to-homescreen-plugin-container .add-to-homescreen-container.add-to-homescreen-hidden{transform:translateY(100%)}.add-to-homescreen-plugin-container button{cursor:pointer}.add-to-homescreen-plugin-container .close_btn{cursor:pointer;position:absolute;top:15px;right:15px;width:20px;height:20px;border:0;background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXIteCI+PGxpbmUgeDE9IjE4IiB5MT0iNiIgeDI9IjYiIHkyPSIxOCI+PC9saW5lPjxsaW5lIHgxPSI2IiB5MT0iNiIgeDI9IjE4IiB5Mj0iMTgiPjwvbGluZT48L3N2Zz4=)}.add-to-homescreen-plugin-container .flex{display:flex;flex-wrap:wrap}.add-to-homescreen-plugin-container .col{flex:1}.add-to-homescreen-plugin-container .icon{background-size:contain;background-repeat:no-repeat;background-position:center}.add-to-homescreen-plugin-container .icon-container .icon{width:60px;height:60px;display:block;line-height:60px;text-align:center;border-radius:30px;font-size:1.3rem;margin-right:15px;text-transform:uppercase}.add-to-homescreen-plugin-container .app-title{font-size:1.3rem;display:inline-block}.add-to-homescreen-plugin-container .app-content{font-size:.8rem;display:inline-block}.add-to-homescreen-plugin-container .btn-container{float:right}.add-to-homescreen-plugin-container .add-button,.add-to-homescreen-plugin-container .add-button:hover,.add-to-homescreen-plugin-container .add-button:visited{width:100%;border:0;outline:0;font-size:1rem;padding:5px}.add-to-homescreen-plugin-container .close:hover,.add-to-homescreen-plugin-container .close:focus{color:#000;text-decoration:none;cursor:pointer}.add-to-homescreen-plugin-container .modal{display:none;position:fixed;z-index:10000;left:0;top:0;width:100%;height:100%;background-color:#0006}.add-to-homescreen-plugin-container .modal-content{background-color:#fff;border-radius:1rem;text-align:center;margin:50% auto;border:1px solid #27e9b8;width:80%}.add-to-homescreen-plugin-container .modal-content ul{padding:0 0 0 15px;text-align:left;list-style-type:none}.add-to-homescreen-plugin-container .shareIOS,.add-to-homescreen-plugin-container .addIOS{width:20px;vertical-align:top}.add-to-homescreen-plugin-container .modal-content .closeModal{border:0;outline:0;font-size:1rem;padding:5px;margin-bottom:15px}")),document.head.appendChild(e)}}catch(n){console.error("vite-plugin-css-injected-by-js",n)}})();
-import { defineComponent as Ce, ref as ke, computed as P, onMounted as xe, openBlock as Me, createElementBlock as ze, createElementVNode as M, normalizeClass as Le, normalizeStyle as R, Fragment as Ie, createTextVNode as te, toDisplayString as U, createCommentVNode as De, h as Oe, render as Ae } from "vue";
+import { defineComponent as Ce, ref as ye, computed as _, onMounted as xe, openBlock as Me, createElementBlock as ze, createElementVNode as M, normalizeClass as Le, normalizeStyle as R, Fragment as Ie, createTextVNode as te, toDisplayString as U, createCommentVNode as Ae, h as De, render as Oe } from "vue";
 /*! js-cookie v3.0.1 | MIT */
-function Y(n) {
+function K(n) {
   for (var b = 1; b < arguments.length; b++) {
     var h = arguments[b];
     for (var m in h)
@@ -21,22 +21,22 @@ var Ee = {
   }
 };
 function se(n, b) {
-  function h(v, y, w) {
+  function h(v, k, w) {
     if (!(typeof document > "u")) {
-      w = Y({}, b, w), typeof w.expires == "number" && (w.expires = new Date(Date.now() + w.expires * 864e5)), w.expires && (w.expires = w.expires.toUTCString()), v = encodeURIComponent(v).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape);
+      w = K({}, b, w), typeof w.expires == "number" && (w.expires = new Date(Date.now() + w.expires * 864e5)), w.expires && (w.expires = w.expires.toUTCString()), v = encodeURIComponent(v).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape);
       var z = "";
       for (var j in w)
         w[j] && (z += "; " + j, w[j] !== !0 && (z += "=" + w[j].split(";")[0]));
-      return document.cookie = v + "=" + n.write(y, v) + z;
+      return document.cookie = v + "=" + n.write(k, v) + z;
     }
   }
   function m(v) {
     if (!(typeof document > "u" || arguments.length && !v)) {
-      for (var y = document.cookie ? document.cookie.split("; ") : [], w = {}, z = 0; z < y.length; z++) {
-        var j = y[z].split("="), x = j.slice(1).join("=");
+      for (var k = document.cookie ? document.cookie.split("; ") : [], w = {}, z = 0; z < k.length; z++) {
+        var j = k[z].split("="), x = j.slice(1).join("=");
         try {
-          var N = decodeURIComponent(j[0]);
-          if (w[N] = n.read(x, N), v === N)
+          var T = decodeURIComponent(j[0]);
+          if (w[T] = n.read(x, T), v === T)
             break;
         } catch {
         }
@@ -48,20 +48,20 @@ function se(n, b) {
     {
       set: h,
       get: m,
-      remove: function(v, y) {
+      remove: function(v, k) {
         h(
           v,
           "",
-          Y({}, y, {
+          K({}, k, {
             expires: -1
           })
         );
       },
       withAttributes: function(v) {
-        return se(this.converter, Y({}, this.attributes, v));
+        return se(this.converter, K({}, this.attributes, v));
       },
       withConverter: function(v) {
-        return se(Y({}, this.converter, v), this.attributes);
+        return se(K({}, this.converter, v), this.attributes);
       }
     },
     {
@@ -71,7 +71,7 @@ function se(n, b) {
   );
 }
 var de = se(Ee, { path: "/" });
-const _e = {
+const Pe = {
   en_GB: {
     addToHomescreen: "Add to homescreen",
     addMessages: {
@@ -139,12 +139,12 @@ const _e = {
     }
   },
   de_DE: {
-    addToHomescreen: "Zum Startbildschirm hinzufügen",
+    addToHomescreen: "Zum Home-Bildschrim hinzufügen",
     addMessages: {
       ios1: "1. Öffnen Sie im Safari-Browser das Teilen-Menü",
-      ios2: '2. Tippen Sie auf die Schaltfläche "Zum Startbildschirm hinzufügen"',
+      ios2: '2. Tippen Sie auf die Schaltfläche "Zum Home-Bildschrim hinzufügen"',
       android: `1. Öffnen Sie die Browsereinstellungen
-2. Tippen Sie auf "Zum Startbildschirm hinzufügen"`,
+2. Tippen Sie auf "Zum Home-Bildschrim hinzufügen"`,
       windows: {
         chrome: "Klicken Sie auf die (+) Schaltfläche rechts neben Ihrer Navigationsleiste.",
         firefox: `1. Ändern Sie die Größe Ihres Browsers, sodass Sie Ihren Desktop sehen können
@@ -157,7 +157,7 @@ const _e = {
         firefox: `1. Ändern Sie die Größe Ihres Browsers, sodass Sie Ihren Desktop sehen können
 2. Ziehen Sie die (i)-Schaltfläche links von der Navigationsleiste auf Ihren Desktop`
       },
-      others: "Es scheint, dass Ihr Browser das Hinzufügen zum Startbildschirm nicht nativ unterstützt. Fühlen Sie sich frei, Ihren Browser zu aktualisieren/zu wechseln."
+      others: "Es scheint, dass Ihr Browser das Hinzufügen zum Home-Bildschrim nicht nativ unterstützt. Fühlen Sie sich frei, Ihren Browser zu aktualisieren/zu wechseln."
     }
   },
   es_ES: {
@@ -291,58 +291,80 @@ const _e = {
       },
       others: "看起来您的浏览器不支持原生添加到主屏幕功能。请随时更新/更换浏览器。"
     }
+  },
+  id_ID: {
+    addToHomescreen: "Pasang Aplikasi",
+    addMessages: {
+      ios1: '1. Pada peramban Safari, klik tombol "Bagikan',
+      ios2: '2. Pilih opsi "Tambahkan ke Layar Beranda"',
+      android: `1. Buka menu peramban
+2. Pilih opsi "Tambahkan ke Layar Beranda"`,
+      windows: {
+        chrome: "Klik tombol (+) di sebelah kanan navigation bar.",
+        firefox: `1. Ubah ukuran jendela peramban hingga desktop Anda terlihat
+2. Seret dan lepas tombol (i) di sebelah kiri navigation bar ke desktop Anda`
+      },
+      macos: {
+        chrome: "Klik tombol (+) di sebelah kanan navigation bar.",
+        safari: `1. Ubah ukuran jendela peramban hingga desktop Anda terlihat
+2. Seret & lepas ikon bumi di kiri bilah notifikasi ke desktop Anda`,
+        firefox: `1. Ubah ukuran jendela peramban hingga desktop Anda terlihat
+2. Seret dan lepas tombol (i) di sebelah kiri navigation bar ke desktop Anda`
+      },
+      others: "Sepertinya browser Anda tidak mendukung penambahan ke layar beranda. Jangan ragu untuk memperbarui/mengubah browser Anda."
+    }
   }
-}, Pe = () => {
+}, _e = () => {
   const n = ["file:", "cordova:", "capacitor:"];
   return window.matchMedia("(display-mode: standalone)").matches || window.location && window.location.protocol && n.indexOf(window.location.protocol) !== -1;
 };
-var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {}, K = {}, Ue = {
+var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {}, Y = {}, Ue = {
   get exports() {
-    return K;
+    return Y;
   },
   set exports(n) {
-    K = n;
+    Y = n;
   }
 };
 (function(n, b) {
   (function(h, m) {
-    var v = "1.0.33", y = "", w = "?", z = "function", j = "undefined", x = "object", N = "string", D = "major", o = "model", a = "name", e = "type", i = "vendor", r = "version", d = "architecture", g = "console", t = "mobile", s = "tablet", S = "smarttv", O = "wearable", le = "embedded", J = 350, X = "Amazon", H = "Apple", ce = "ASUS", ue = "BlackBerry", L = "Browser", q = "Chrome", je = "Edge", B = "Firefox", Z = "Google", be = "Huawei", $ = "LG", ee = "Microsoft", we = "Motorola", V = "Opera", ie = "Samsung", pe = "Sharp", G = "Sony", oe = "Xiaomi", ae = "Zebra", me = "Facebook", Ne = function(l, p) {
+    var v = "1.0.33", k = "", w = "?", z = "function", j = "undefined", x = "object", T = "string", A = "major", o = "model", a = "name", e = "type", i = "vendor", r = "version", d = "architecture", g = "console", t = "mobile", s = "tablet", S = "smarttv", D = "wearable", le = "embedded", J = 350, X = "Amazon", H = "Apple", ce = "ASUS", ue = "BlackBerry", L = "Browser", B = "Chrome", je = "Edge", q = "Firefox", Z = "Google", be = "Huawei", $ = "LG", ee = "Microsoft", we = "Motorola", V = "Opera", ie = "Samsung", pe = "Sharp", G = "Sony", oe = "Xiaomi", ae = "Zebra", me = "Facebook", Te = function(l, p) {
       var c = {};
-      for (var k in l)
-        p[k] && p[k].length % 2 === 0 ? c[k] = p[k].concat(l[k]) : c[k] = l[k];
+      for (var y in l)
+        p[y] && p[y].length % 2 === 0 ? c[y] = p[y].concat(l[y]) : c[y] = l[y];
       return c;
     }, Q = function(l) {
       for (var p = {}, c = 0; c < l.length; c++)
         p[l[c].toUpperCase()] = l[c];
       return p;
     }, ge = function(l, p) {
-      return typeof l === N ? A(p).indexOf(A(l)) !== -1 : !1;
-    }, A = function(l) {
+      return typeof l === T ? O(p).indexOf(O(l)) !== -1 : !1;
+    }, O = function(l) {
       return l.toLowerCase();
     }, Se = function(l) {
-      return typeof l === N ? l.replace(/[^\d\.]/g, y).split(".")[0] : m;
+      return typeof l === T ? l.replace(/[^\d\.]/g, k).split(".")[0] : m;
     }, re = function(l, p) {
-      if (typeof l === N)
-        return l = l.replace(/^\s\s*/, y), typeof p === j ? l : l.substring(0, J);
+      if (typeof l === T)
+        return l = l.replace(/^\s\s*/, k), typeof p === j ? l : l.substring(0, J);
     }, E = function(l, p) {
-      for (var c = 0, k, u, F, f, _, C; c < p.length && !_; ) {
-        var ve = p[c], ye = p[c + 1];
-        for (k = u = 0; k < ve.length && !_; )
-          if (_ = ve[k++].exec(l), _)
-            for (F = 0; F < ye.length; F++)
-              C = _[++u], f = ye[F], typeof f === x && f.length > 0 ? f.length === 2 ? typeof f[1] == z ? this[f[0]] = f[1].call(this, C) : this[f[0]] = f[1] : f.length === 3 ? typeof f[1] === z && !(f[1].exec && f[1].test) ? this[f[0]] = C ? f[1].call(this, C, f[2]) : m : this[f[0]] = C ? C.replace(f[1], f[2]) : m : f.length === 4 && (this[f[0]] = C ? f[3].call(this, C.replace(f[1], f[2])) : m) : this[f] = C || m;
+      for (var c = 0, y, u, F, f, P, C; c < p.length && !P; ) {
+        var ve = p[c], ke = p[c + 1];
+        for (y = u = 0; y < ve.length && !P; )
+          if (P = ve[y++].exec(l), P)
+            for (F = 0; F < ke.length; F++)
+              C = P[++u], f = ke[F], typeof f === x && f.length > 0 ? f.length === 2 ? typeof f[1] == z ? this[f[0]] = f[1].call(this, C) : this[f[0]] = f[1] : f.length === 3 ? typeof f[1] === z && !(f[1].exec && f[1].test) ? this[f[0]] = C ? f[1].call(this, C, f[2]) : m : this[f[0]] = C ? C.replace(f[1], f[2]) : m : f.length === 4 && (this[f[0]] = C ? f[3].call(this, C.replace(f[1], f[2])) : m) : this[f] = C || m;
         c += 2;
       }
     }, ne = function(l, p) {
       for (var c in p)
         if (typeof p[c] === x && p[c].length > 0) {
-          for (var k = 0; k < p[c].length; k++)
-            if (ge(p[c][k], l))
+          for (var y = 0; y < p[c].length; y++)
+            if (ge(p[c][y], l))
               return c === w ? m : c;
         } else if (ge(p[c], l))
           return c === w ? m : c;
       return l;
-    }, Te = {
+    }, Ne = {
       "1.0": "/8",
       "1.2": "/1",
       "1.3": "/3",
@@ -455,7 +477,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /\bfocus\/([\w\.]+)/i
           // Firefox Focus
         ],
-        [r, [a, B + " Focus"]],
+        [r, [a, q + " Focus"]],
         [
           /\bopt\/([\w\.]+)/i
           // Opera Touch
@@ -485,7 +507,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /fxios\/([-\w\.]+)/i
           // Firefox for iOS
         ],
-        [r, [a, B]],
+        [r, [a, q]],
         [
           /\bqihu|(qi?ho?o?|360)browser/i
           // 360
@@ -543,12 +565,12 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /headlesschrome(?:\/([\w\.]+)| )/i
           // Chrome Headless
         ],
-        [r, [a, q + " Headless"]],
+        [r, [a, B + " Headless"]],
         [
           / wv\).+(chrome)\/([\w\.]+)/i
           // Chrome WebView
         ],
-        [[a, q + " WebView"], r],
+        [[a, B + " WebView"], r],
         [
           /droid.+ version\/([\w\.]+)\b.+(?:mobile safari|safari)/i
           // Android Browser
@@ -573,7 +595,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /webkit.+?(mobile ?safari|safari)(\/[\w\.]+)/i
           // Safari < 3.0
         ],
-        [a, [r, ne, Te]],
+        [a, [r, ne, Ne]],
         [
           /(webkit|khtml)\/([\w\.]+)/i
         ],
@@ -588,7 +610,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /mobile vr; rv:([\w\.]+)\).+firefox/i
           // Firefox Reality
         ],
-        [r, [a, B + " Reality"]],
+        [r, [a, q + " Reality"]],
         [
           /ekiohf.+(flow)\/([\w\.]+)/i,
           // Flow
@@ -625,7 +647,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(ia32(?=;))/i
           // IA32 (quicktime)
         ],
-        [[d, A]],
+        [[d, O]],
         [
           /((?:i[346]|x)86)[;\)]/i
           // IA32 (x86)
@@ -650,7 +672,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /((?:ppc|powerpc)(?:64)?)(?: mac|;|\))/i
           // PowerPC
         ],
-        [[d, /ower/, y, A]],
+        [[d, /ower/, k, O]],
         [
           /(sun4\w)[;\)]/i
           // SPARC
@@ -660,7 +682,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /((?:avr32|ia64(?=;))|68k(?=\))|\barm(?=v(?:[1-7]|[5-7]1)l?|;|eabi)|(?=atmel )avr|(?:irix|mips|sparc)(?:64)?\b|pa-risc)/i
           // IA64, 68K, ARM/64, AVR/32, IRIX/64, MIPS/64, SPARC/64, PA-RISC
         ],
-        [[d, A]]
+        [[d, O]]
       ],
       device: [
         [
@@ -1097,7 +1119,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /crkey/i
           // Google Chromecast
         ],
-        [[o, q + "cast"], [i, Z], [e, S]],
+        [[o, B + "cast"], [i, Z], [e, S]],
         [
           /droid.+aft(\w)( bui|\))/i
           // Fire TV
@@ -1138,21 +1160,21 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /((pebble))app/i
           // Pebble
         ],
-        [i, o, [e, O]],
+        [i, o, [e, D]],
         [
           /droid.+; (glass) \d/i
           // Google Glass
         ],
-        [o, [i, Z], [e, O]],
+        [o, [i, Z], [e, D]],
         [
           /droid.+; (wt63?0{2,3})\)/i
         ],
-        [o, [i, ae], [e, O]],
+        [o, [i, ae], [e, D]],
         [
           /(quest( 2)?)/i
           // Oculus Quest
         ],
-        [o, [i, me], [e, O]],
+        [o, [i, me], [e, D]],
         [
           ///////////////////
           // EMBEDDED
@@ -1283,7 +1305,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /mozilla\/[\d\.]+ \((?:mobile|tablet|tv|mobile; [\w ]+); rv:.+ gecko\/([\w\.]+)/i
           // Firefox OS
         ],
-        [r, [a, B + " OS"]],
+        [r, [a, q + " OS"]],
         [
           /web0s;.+rt(tv)/i,
           /\b(?:hp)?wos(?:browser)?\/([\w\.]+)/i
@@ -1295,7 +1317,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /crkey\/([\d\.]+)/i
           // Google Chromecast
         ],
-        [r, [a, q + "cast"]],
+        [r, [a, B + "cast"]],
         [
           /(cros) [\w]+ ([\w\.]+\w)/i
           // Chromium OS
@@ -1343,25 +1365,25 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
         ],
         [a, r]
       ]
-    }, T = function(l, p) {
-      if (typeof l === x && (p = l, l = m), !(this instanceof T))
-        return new T(l, p).getResult();
-      var c = l || (typeof h !== j && h.navigator && h.navigator.userAgent ? h.navigator.userAgent : y), k = p ? Ne(he, p) : he;
+    }, N = function(l, p) {
+      if (typeof l === x && (p = l, l = m), !(this instanceof N))
+        return new N(l, p).getResult();
+      var c = l || (typeof h !== j && h.navigator && h.navigator.userAgent ? h.navigator.userAgent : k), y = p ? Te(he, p) : he;
       return this.getBrowser = function() {
         var u = {};
-        return u[a] = m, u[r] = m, E.call(u, c, k.browser), u.major = Se(u.version), u;
+        return u[a] = m, u[r] = m, E.call(u, c, y.browser), u.major = Se(u.version), u;
       }, this.getCPU = function() {
         var u = {};
-        return u[d] = m, E.call(u, c, k.cpu), u;
+        return u[d] = m, E.call(u, c, y.cpu), u;
       }, this.getDevice = function() {
         var u = {};
-        return u[i] = m, u[o] = m, u[e] = m, E.call(u, c, k.device), u;
+        return u[i] = m, u[o] = m, u[e] = m, E.call(u, c, y.device), u;
       }, this.getEngine = function() {
         var u = {};
-        return u[a] = m, u[r] = m, E.call(u, c, k.engine), u;
+        return u[a] = m, u[r] = m, E.call(u, c, y.engine), u;
       }, this.getOS = function() {
         var u = {};
-        return u[a] = m, u[r] = m, E.call(u, c, k.os), u;
+        return u[a] = m, u[r] = m, E.call(u, c, y.os), u;
       }, this.getResult = function() {
         return {
           ua: this.getUA(),
@@ -1374,13 +1396,13 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
       }, this.getUA = function() {
         return c;
       }, this.setUA = function(u) {
-        return c = typeof u === N && u.length > J ? re(u, J) : u, this;
+        return c = typeof u === T && u.length > J ? re(u, J) : u, this;
       }, this.setUA(c), this;
     };
-    T.VERSION = v, T.BROWSER = Q([a, r, D]), T.CPU = Q([d]), T.DEVICE = Q([o, i, e, g, t, S, s, O, le]), T.ENGINE = T.OS = Q([a, r]), n.exports && (b = n.exports = T), b.UAParser = T;
+    N.VERSION = v, N.BROWSER = Q([a, r, A]), N.CPU = Q([d]), N.DEVICE = Q([o, i, e, g, t, S, s, D, le]), N.ENGINE = N.OS = Q([a, r]), n.exports && (b = n.exports = N), b.UAParser = N;
     var I = typeof h !== j && (h.jQuery || h.Zepto);
     if (I && !I.ua) {
-      var W = new T();
+      var W = new N();
       I.ua = W.getResult(), I.ua.get = function() {
         return W.getUA();
       }, I.ua.set = function(l) {
@@ -1391,8 +1413,8 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
       };
     }
   })(typeof window == "object" ? window : Re);
-})(Ue, K);
-const He = K, qe = Ce({
+})(Ue, Y);
+const He = Y, Be = Ce({
   name: "addToHomescreen",
   props: {
     title: {
@@ -1400,6 +1422,10 @@ const He = K, qe = Ce({
       required: !1
     },
     content: {
+      type: String,
+      required: !1
+    },
+    buttonText: {
       type: String,
       required: !1
     },
@@ -1448,30 +1474,30 @@ const He = K, qe = Ce({
     const b = (d) => n ? n[d] : void 0, h = (d) => {
       const g = n ? n[d] : d;
       return g && typeof g == "string" ? g : d;
-    }, m = b("lang") || "en_GB", v = _e[m], y = (d) => d.split(".").reduce((g, t) => {
+    }, m = b("lang") || "en_GB", v = Pe[m], k = (d) => d.split(".").reduce((g, t) => {
       if (g)
         return g[t];
-    }, v), w = ke(), z = P(() => document.title), j = P(() => window.location.href), x = P(() => z.value.substring(0, 1)), N = ke(!1), D = () => {
+    }, v), w = ye(), z = _(() => document.title), j = _(() => window.location.href), x = _(() => z.value.substring(0, 1)), T = ye(!1), A = () => {
       let d = new Date();
       const g = n.expires || 365;
       d.setDate(d.getDate() + g), de.set("addToHomescreenCalled", "true", {
         expires: d
       });
-    }, o = P(() => {
+    }, o = _(() => {
       const d = b("iconColor"), g = b("iconPath"), t = b("iconTextColor");
       return {
         backgroundColor: d && typeof d == "string" ? d : "transparent",
         backgroundImage: g ? "url(" + b("iconPath") + ")" : "none",
         color: t && typeof t == "string" ? t : "black"
       };
-    }), a = P(() => {
+    }), a = _(() => {
       const d = b("buttonTextColor"), g = b("buttonColor");
       return {
         color: d && d === "string" ? d : "white",
         backgroundColor: g && typeof g == "string" ? g : "black"
       };
     }), e = () => {
-      D(), N.value = !1;
+      A(), T.value = !1;
     }, i = () => {
       const d = document.getElementById("IOSmodal");
       d && (d.style.display = "none");
@@ -1480,16 +1506,16 @@ const He = K, qe = Ce({
         os: g.os.name,
         browser: g.browser.name
       }, s = document.getElementById("IOSmodal");
-      w.value ? w.value.prompt() : t.os === "iOS" ? s && (s.style.display = "block") : t.os === "Android" ? alert(y("addMessages.android")) : t.os === "Windows" && (t.browser === "Chrome" || t.browser === "Edge") ? alert(y("addMessages.windows.chrome")) : t.os === "Windows" && t.browser === "Firefox" ? alert(y("addMessages.windows.firefox")) : t.os === "Mac OS" ? "ontouchstart" in window || navigator.maxTouchPoints > 0 ? s && (s.style.display = "block") : t.browser === "Firefox" ? alert(y("addMessages.macos.firefox")) : t.browser === "Chrome" ? alert(y("addMessages.macos.chrome")) : t.browser === "Safari" && alert(y("addMessages.macos.safari")) : alert(y("addMessages.others")), N.value = !1;
+      w.value ? w.value.prompt() : t.os === "iOS" ? s && (s.style.display = "block") : t.os === "Android" ? alert(k("addMessages.android")) : t.os === "Windows" && (t.browser === "Chrome" || t.browser === "Edge") ? alert(k("addMessages.windows.chrome")) : t.os === "Windows" && t.browser === "Firefox" ? alert(k("addMessages.windows.firefox")) : t.os === "Mac OS" ? "ontouchstart" in window || navigator.maxTouchPoints > 0 ? s && (s.style.display = "block") : t.browser === "Firefox" ? alert(k("addMessages.macos.firefox")) : t.browser === "Chrome" ? alert(k("addMessages.macos.chrome")) : t.browser === "Safari" && alert(k("addMessages.macos.safari")) : alert(k("addMessages.others")), T.value = !1;
     };
     return xe(() => {
       window.addEventListener("beforeinstallprompt", (g) => {
         g.preventDefault(), w.value = g;
       });
       const d = de.get("addToHomescreenCalled");
-      !Pe() && !d && (N.value = !0, D());
+      !_e() && !d && (T.value = !0, A());
     }), {
-      t: y,
+      t: k,
       addToHomescreen: r,
       closeModal: i,
       close: e,
@@ -1500,28 +1526,28 @@ const He = K, qe = Ce({
       appUrl: j,
       firstCharTitle: x,
       appTitle: z,
-      opened: N
+      opened: T
     };
   }
-}), Be = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDMzMy4zMjQgMzMzLjMyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzMzLjMyNCAzMzMuMzI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojMjIyMjIwOyIgZD0iTTEyNS4yNTUsNTkuNTEzbDMzLjkwNy0zMy45MDd2MTQ5LjQ1MWMwLDQuMTQzLDMuMzU4LDcuNSw3LjUsNy41czcuNS0zLjM1Nyw3LjUtNy41VjI1LjYwNg0KCQlsMzMuOTA3LDMzLjkwN2MxLjQ2NCwxLjQ2NCwzLjM4NCwyLjE5Niw1LjMwMywyLjE5NnMzLjgzOS0wLjczMiw1LjMwMy0yLjE5NmMyLjkyOS0yLjkzLDIuOTI5LTcuNjc4LDAtMTAuNjA3bC00Ni43MS00Ni43MQ0KCQljLTIuOTI5LTIuOTI4LTcuNjc4LTIuOTI4LTEwLjYwNiwwbC00Ni43MSw0Ni43MWMtMi45MjksMi45My0yLjkyOSw3LjY3OCwwLDEwLjYwN0MxMTcuNTc3LDYyLjQ0MSwxMjIuMzI2LDYyLjQ0MSwxMjUuMjU1LDU5LjUxM3oNCgkJIi8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzIyMjIyMDsiIGQ9Ik0yNjMuMzI4LDg3LjU1N2gtNjEuNjQ1Yy00LjE0MiwwLTcuNSwzLjM1Ny03LjUsNy41czMuMzU4LDcuNSw3LjUsNy41aDU0LjE0NXYyMTUuNzY3SDc3LjQ5NQ0KCQlWMTAyLjU1N2g1NC4xNDVjNC4xNDIsMCw3LjUtMy4zNTcsNy41LTcuNXMtMy4zNTgtNy41LTcuNS03LjVINjkuOTk1Yy00LjE0MiwwLTcuNSwzLjM1Ny03LjUsNy41djIzMC43NjcNCgkJYzAsNC4xNDMsMy4zNTgsNy41LDcuNSw3LjVoMTkzLjMzM2M0LjE0MiwwLDcuNS0zLjM1Nyw3LjUtNy41Vjk1LjA1N0MyNzAuODI4LDkwLjkxNSwyNjcuNDcsODcuNTU3LDI2My4zMjgsODcuNTU3eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=", Ze = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTkgM0g1Yy0xLjExIDAtMiAuOS0yIDJ2MTRjMCAxLjEuODkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNWMwLTEuMS0uOS0yLTItMnptMCAxNkg1VjVoMTR2MTR6bS04LTJoMnYtNGg0di0yaC00VjdoLTJ2NEg3djJoNHoiLz48L3N2Zz4=";
+}), qe = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDMzMy4zMjQgMzMzLjMyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzMzLjMyNCAzMzMuMzI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojMjIyMjIwOyIgZD0iTTEyNS4yNTUsNTkuNTEzbDMzLjkwNy0zMy45MDd2MTQ5LjQ1MWMwLDQuMTQzLDMuMzU4LDcuNSw3LjUsNy41czcuNS0zLjM1Nyw3LjUtNy41VjI1LjYwNg0KCQlsMzMuOTA3LDMzLjkwN2MxLjQ2NCwxLjQ2NCwzLjM4NCwyLjE5Niw1LjMwMywyLjE5NnMzLjgzOS0wLjczMiw1LjMwMy0yLjE5NmMyLjkyOS0yLjkzLDIuOTI5LTcuNjc4LDAtMTAuNjA3bC00Ni43MS00Ni43MQ0KCQljLTIuOTI5LTIuOTI4LTcuNjc4LTIuOTI4LTEwLjYwNiwwbC00Ni43MSw0Ni43MWMtMi45MjksMi45My0yLjkyOSw3LjY3OCwwLDEwLjYwN0MxMTcuNTc3LDYyLjQ0MSwxMjIuMzI2LDYyLjQ0MSwxMjUuMjU1LDU5LjUxM3oNCgkJIi8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzIyMjIyMDsiIGQ9Ik0yNjMuMzI4LDg3LjU1N2gtNjEuNjQ1Yy00LjE0MiwwLTcuNSwzLjM1Ny03LjUsNy41czMuMzU4LDcuNSw3LjUsNy41aDU0LjE0NXYyMTUuNzY3SDc3LjQ5NQ0KCQlWMTAyLjU1N2g1NC4xNDVjNC4xNDIsMCw3LjUtMy4zNTcsNy41LTcuNXMtMy4zNTgtNy41LTcuNS03LjVINjkuOTk1Yy00LjE0MiwwLTcuNSwzLjM1Ny03LjUsNy41djIzMC43NjcNCgkJYzAsNC4xNDMsMy4zNTgsNy41LDcuNSw3LjVoMTkzLjMzM2M0LjE0MiwwLDcuNS0zLjM1Nyw3LjUtNy41Vjk1LjA1N0MyNzAuODI4LDkwLjkxNSwyNjcuNDcsODcuNTU3LDI2My4zMjgsODcuNTU3eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=", Ze = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTkgM0g1Yy0xLjExIDAtMiAuOS0yIDJ2MTRjMCAxLjEuODkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNWMwLTEuMS0uOS0yLTItMnptMCAxNkg1VjVoMTR2MTR6bS04LTJoMnYtNGg0di0yaC00VjdoLTJ2NEg3djJoNHoiLz48L3N2Zz4=";
 const Ve = (n, b) => {
   const h = n.__vccOpts || n;
   for (const [m, v] of b)
     h[m] = v;
   return h;
-}, Ge = { class: "add-to-homescreen-plugin-container" }, Qe = { class: "flex" }, We = { class: "icon-container" }, Fe = { class: "col" }, Ye = /* @__PURE__ */ M("br", null, null, -1), Ke = ["innerHTML"], Je = { class: "flex" }, Xe = { class: "col" }, $e = { class: "btn-container" }, ei = {
+}, Ge = { class: "add-to-homescreen-plugin-container" }, Qe = { class: "flex" }, We = { class: "icon-container" }, Fe = { class: "col" }, Ke = /* @__PURE__ */ M("br", null, null, -1), Ye = ["innerHTML"], Je = { class: "flex" }, Xe = { class: "col" }, $e = { class: "btn-container" }, ei = {
   id: "IOSmodal",
   class: "modal add-to-homescreen-visible"
 }, ii = { class: "modal-content" }, oi = /* @__PURE__ */ M("img", {
   class: "shareIOS",
-  src: Be,
+  src: qe,
   alt: "share IOS"
 }, null, -1), ai = /* @__PURE__ */ M("img", {
   class: "addIOS",
   src: Ze,
   alt: "add IOS"
 }, null, -1);
-function ri(n, b, h, m, v, y) {
+function ri(n, b, h, m, v, k) {
   return Me(), ze("div", Ge, [
     M("div", {
       class: Le([
@@ -1535,7 +1561,7 @@ function ri(n, b, h, m, v, y) {
             class: "icon",
             style: R(n.iconStyle)
           }, [
-            n.getOpt("iconPath") ? De("", !0) : (Me(), ze(Ie, { key: 0 }, [
+            n.getOpt("iconPath") ? Ae("", !0) : (Me(), ze(Ie, { key: 0 }, [
               te(U(n.firstCharTitle), 1)
             ], 64))
           ], 4)
@@ -1545,12 +1571,12 @@ function ri(n, b, h, m, v, y) {
             class: "app-title",
             style: R(n.getCssOpt("titleColor"))
           }, U(n.getOpt("title") ? n.getOpt("title") : n.appTitle), 5),
-          Ye,
+          Ke,
           M("span", {
             class: "app-content",
             style: R({ color: n.getCssOpt("contentColor") }),
             innerHTML: n.getOpt("content") || n.appUrl
-          }, null, 12, Ke)
+          }, null, 12, Ye)
         ])
       ]),
       M("div", Je, [
@@ -1560,7 +1586,7 @@ function ri(n, b, h, m, v, y) {
               onClick: b[0] || (b[0] = (...w) => n.addToHomescreen && n.addToHomescreen(...w)),
               class: "add-button",
               style: R(n.buttonStyle)
-            }, U(n.t("addToHomescreen")), 5)
+            }, U(n.getOpt("buttonText") || n.t("addToHomescreen")), 5)
           ])
         ])
       ]),
@@ -1591,14 +1617,14 @@ function ri(n, b, h, m, v, y) {
     ])
   ]);
 }
-const ni = /* @__PURE__ */ Ve(qe, [["render", ri]]), ti = () => {
+const ni = /* @__PURE__ */ Ve(Be, [["render", ri]]), ti = () => {
   const n = ["file:", "cordova:", "capacitor:"];
   return window.matchMedia("(display-mode: standalone)").matches || window.location && window.location.protocol && n.indexOf(window.location.protocol) !== -1;
 };
 function si(n) {
   if (!ti() || !de.get("addToHomescreenCalled")) {
-    const b = Oe(ni, n), h = document.createElement("div");
-    return document.body.appendChild(h), Ae(b, h), b.component;
+    const b = De(ni, n), h = document.createElement("div");
+    return document.body.appendChild(h), Oe(b, h), b.component;
   }
 }
 const li = {
