@@ -6,6 +6,7 @@ interface DeviceInfos {
 interface Props {
   title?: string;
   content?: string;
+  addToHomescreenText?: string;
   titleColor?: string;
   contentColor?: string;
   iconPath?: string;
