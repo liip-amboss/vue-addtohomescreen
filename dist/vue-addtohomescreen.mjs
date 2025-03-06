@@ -1,5 +1,5 @@
 (function(){"use strict";try{if(typeof document!="undefined"){var e=document.createElement("style");e.appendChild(document.createTextNode(".add-to-homescreen-plugin-container .add-to-homescreen-container{z-index:10000;border-top:1px solid #e0e0e0;font-family:-apple-system,BlinkMacSystemFont,Roboto,sans-serif;width:100%;box-sizing:border-box;background:white;position:fixed;bottom:0;left:0;padding:16px;align-items:center;transition:all .5s}.add-to-homescreen-plugin-container .add-to-homescreen-container.add-to-homescreen-visible{transform:translateY(0)}.add-to-homescreen-plugin-container .add-to-homescreen-container.add-to-homescreen-hidden{transform:translateY(100%)}.add-to-homescreen-plugin-container button{cursor:pointer}.add-to-homescreen-plugin-container .close_btn{cursor:pointer;position:absolute;top:15px;right:15px;width:20px;height:20px;border:0;background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXIteCI+PGxpbmUgeDE9IjE4IiB5MT0iNiIgeDI9IjYiIHkyPSIxOCI+PC9saW5lPjxsaW5lIHgxPSI2IiB5MT0iNiIgeDI9IjE4IiB5Mj0iMTgiPjwvbGluZT48L3N2Zz4=)}.add-to-homescreen-plugin-container .flex{display:flex;flex-wrap:wrap}.add-to-homescreen-plugin-container .col{flex:1}.add-to-homescreen-plugin-container .icon{background-size:contain;background-repeat:no-repeat;background-position:center}.add-to-homescreen-plugin-container .icon-container .icon{width:60px;height:60px;display:block;line-height:60px;text-align:center;border-radius:30px;font-size:1.3rem;margin-right:15px;text-transform:uppercase}.add-to-homescreen-plugin-container .app-title{font-size:1.3rem;display:inline-block}.add-to-homescreen-plugin-container .app-content{font-size:.8rem;display:inline-block}.add-to-homescreen-plugin-container .btn-container{float:right}.add-to-homescreen-plugin-container .add-button,.add-to-homescreen-plugin-container .add-button:hover,.add-to-homescreen-plugin-container .add-button:visited{width:100%;border:0;outline:0;font-size:1rem;padding:5px}.add-to-homescreen-plugin-container .close:hover,.add-to-homescreen-plugin-container .close:focus{color:#000;text-decoration:none;cursor:pointer}.add-to-homescreen-plugin-container .modal{display:none;position:fixed;z-index:10000;left:0;top:0;width:100%;height:100%;background-color:#0006}.add-to-homescreen-plugin-container .modal-content{background-color:#fff;border-radius:1rem;text-align:center;margin:50% auto;border:1px solid #27e9b8;width:80%}.add-to-homescreen-plugin-container .modal-content ul{padding:0 0 0 15px;text-align:left;list-style-type:none}.add-to-homescreen-plugin-container .shareIOS,.add-to-homescreen-plugin-container .addIOS{width:20px;vertical-align:top}.add-to-homescreen-plugin-container .modal-content .closeModal{border:0;outline:0;font-size:1rem;padding:5px;margin-bottom:15px}")),document.head.appendChild(e)}}catch(n){console.error("vite-plugin-css-injected-by-js",n)}})();
-import { defineComponent as Ce, ref as ye, computed as _, onMounted as xe, openBlock as Me, createElementBlock as ze, createElementVNode as M, normalizeClass as Ie, normalizeStyle as R, Fragment as Le, createTextVNode as se, toDisplayString as q, createCommentVNode as Ae, h as Oe, render as De } from "vue";
+import { defineComponent as Ce, ref as ye, computed as q, onMounted as xe, openBlock as Me, createElementBlock as ze, createElementVNode as M, normalizeClass as Ie, normalizeStyle as R, Fragment as Le, createTextVNode as se, toDisplayString as A, createCommentVNode as Ae, h as Oe, render as De } from "vue";
 /*! js-cookie v3.0.1 | MIT */
 function K(n) {
   for (var d = 1; d < arguments.length; d++) {
@@ -318,7 +318,7 @@ const Pe = {
   const n = ["file:", "cordova:", "capacitor:"];
   return window.matchMedia("(display-mode: standalone)").matches || window.location && window.location.protocol && n.indexOf(window.location.protocol) !== -1;
 };
-var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {}, Y = {}, qe = {
+var qe = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {}, Y = {}, Re = {
   get exports() {
     return Y;
   },
@@ -328,7 +328,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
 };
 (function(n, d) {
   (function(h, g) {
-    var v = "1.0.33", k = "", w = "?", z = "function", S = "undefined", x = "object", j = "string", A = "major", a = "model", o = "name", e = "type", i = "vendor", r = "version", l = "architecture", m = "console", s = "mobile", t = "tablet", T = "smarttv", O = "wearable", le = "embedded", J = 350, X = "Amazon", U = "Apple", ce = "ASUS", ue = "BlackBerry", I = "Browser", H = "Chrome", Se = "Edge", B = "Firefox", Z = "Google", be = "Huawei", $ = "LG", ee = "Microsoft", we = "Motorola", V = "Opera", ie = "Samsung", pe = "Sharp", G = "Sony", ae = "Xiaomi", oe = "Zebra", ge = "Facebook", je = function(c, p) {
+    var v = "1.0.33", k = "", w = "?", z = "function", S = "undefined", x = "object", j = "string", O = "major", a = "model", o = "name", e = "type", i = "vendor", r = "version", l = "architecture", m = "console", s = "mobile", t = "tablet", T = "smarttv", D = "wearable", le = "embedded", J = 350, X = "Amazon", U = "Apple", ce = "ASUS", ue = "BlackBerry", I = "Browser", H = "Chrome", Se = "Edge", B = "Firefox", Z = "Google", be = "Huawei", $ = "LG", ee = "Microsoft", we = "Motorola", V = "Opera", ie = "Samsung", pe = "Sharp", G = "Sony", ae = "Xiaomi", oe = "Zebra", ge = "Facebook", je = function(c, p) {
       var u = {};
       for (var y in c)
         p[y] && p[y].length % 2 === 0 ? u[y] = p[y].concat(c[y]) : u[y] = c[y];
@@ -338,21 +338,21 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
         p[c[u].toUpperCase()] = c[u];
       return p;
     }, me = function(c, p) {
-      return typeof c === j ? D(p).indexOf(D(c)) !== -1 : !1;
-    }, D = function(c) {
+      return typeof c === j ? E(p).indexOf(E(c)) !== -1 : !1;
+    }, E = function(c) {
       return c.toLowerCase();
     }, Te = function(c) {
       return typeof c === j ? c.replace(/[^\d\.]/g, k).split(".")[0] : g;
     }, re = function(c, p) {
       if (typeof c === j)
         return c = c.replace(/^\s\s*/, k), typeof p === S ? c : c.substring(0, J);
-    }, E = function(c, p) {
-      for (var u = 0, y, b, F, f, P, C; u < p.length && !P; ) {
+    }, P = function(c, p) {
+      for (var u = 0, y, b, F, f, _, C; u < p.length && !_; ) {
         var ve = p[u], ke = p[u + 1];
-        for (y = b = 0; y < ve.length && !P; )
-          if (P = ve[y++].exec(c), P)
+        for (y = b = 0; y < ve.length && !_; )
+          if (_ = ve[y++].exec(c), _)
             for (F = 0; F < ke.length; F++)
-              C = P[++b], f = ke[F], typeof f === x && f.length > 0 ? f.length === 2 ? typeof f[1] == z ? this[f[0]] = f[1].call(this, C) : this[f[0]] = f[1] : f.length === 3 ? typeof f[1] === z && !(f[1].exec && f[1].test) ? this[f[0]] = C ? f[1].call(this, C, f[2]) : g : this[f[0]] = C ? C.replace(f[1], f[2]) : g : f.length === 4 && (this[f[0]] = C ? f[3].call(this, C.replace(f[1], f[2])) : g) : this[f] = C || g;
+              C = _[++b], f = ke[F], typeof f === x && f.length > 0 ? f.length === 2 ? typeof f[1] == z ? this[f[0]] = f[1].call(this, C) : this[f[0]] = f[1] : f.length === 3 ? typeof f[1] === z && !(f[1].exec && f[1].test) ? this[f[0]] = C ? f[1].call(this, C, f[2]) : g : this[f[0]] = C ? C.replace(f[1], f[2]) : g : f.length === 4 && (this[f[0]] = C ? f[3].call(this, C.replace(f[1], f[2])) : g) : this[f] = C || g;
         u += 2;
       }
     }, ne = function(c, p) {
@@ -647,7 +647,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /(ia32(?=;))/i
           // IA32 (quicktime)
         ],
-        [[l, D]],
+        [[l, E]],
         [
           /((?:i[346]|x)86)[;\)]/i
           // IA32 (x86)
@@ -672,7 +672,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /((?:ppc|powerpc)(?:64)?)(?: mac|;|\))/i
           // PowerPC
         ],
-        [[l, /ower/, k, D]],
+        [[l, /ower/, k, E]],
         [
           /(sun4\w)[;\)]/i
           // SPARC
@@ -682,7 +682,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /((?:avr32|ia64(?=;))|68k(?=\))|\barm(?=v(?:[1-7]|[5-7]1)l?|;|eabi)|(?=atmel )avr|(?:irix|mips|sparc)(?:64)?\b|pa-risc)/i
           // IA64, 68K, ARM/64, AVR/32, IRIX/64, MIPS/64, SPARC/64, PA-RISC
         ],
-        [[l, D]]
+        [[l, E]]
       ],
       device: [
         [
@@ -1160,21 +1160,21 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           /((pebble))app/i
           // Pebble
         ],
-        [i, a, [e, O]],
+        [i, a, [e, D]],
         [
           /droid.+; (glass) \d/i
           // Google Glass
         ],
-        [a, [i, Z], [e, O]],
+        [a, [i, Z], [e, D]],
         [
           /droid.+; (wt63?0{2,3})\)/i
         ],
-        [a, [i, oe], [e, O]],
+        [a, [i, oe], [e, D]],
         [
           /(quest( 2)?)/i
           // Oculus Quest
         ],
-        [a, [i, ge], [e, O]],
+        [a, [i, ge], [e, D]],
         [
           ///////////////////
           // EMBEDDED
@@ -1371,19 +1371,19 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
       var u = c || (typeof h !== S && h.navigator && h.navigator.userAgent ? h.navigator.userAgent : k), y = p ? je(he, p) : he;
       return this.getBrowser = function() {
         var b = {};
-        return b[o] = g, b[r] = g, E.call(b, u, y.browser), b.major = Te(b.version), b;
+        return b[o] = g, b[r] = g, P.call(b, u, y.browser), b.major = Te(b.version), b;
       }, this.getCPU = function() {
         var b = {};
-        return b[l] = g, E.call(b, u, y.cpu), b;
+        return b[l] = g, P.call(b, u, y.cpu), b;
       }, this.getDevice = function() {
         var b = {};
-        return b[i] = g, b[a] = g, b[e] = g, E.call(b, u, y.device), b;
+        return b[i] = g, b[a] = g, b[e] = g, P.call(b, u, y.device), b;
       }, this.getEngine = function() {
         var b = {};
-        return b[o] = g, b[r] = g, E.call(b, u, y.engine), b;
+        return b[o] = g, b[r] = g, P.call(b, u, y.engine), b;
       }, this.getOS = function() {
         var b = {};
-        return b[o] = g, b[r] = g, E.call(b, u, y.os), b;
+        return b[o] = g, b[r] = g, P.call(b, u, y.os), b;
       }, this.getResult = function() {
         return {
           ua: this.getUA(),
@@ -1399,7 +1399,7 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
         return u = typeof b === j && b.length > J ? re(b, J) : b, this;
       }, this.setUA(u), this;
     };
-    N.VERSION = v, N.BROWSER = Q([o, r, A]), N.CPU = Q([l]), N.DEVICE = Q([a, i, e, m, s, T, t, O, le]), N.ENGINE = N.OS = Q([o, r]), n.exports && (d = n.exports = N), d.UAParser = N;
+    N.VERSION = v, N.BROWSER = Q([o, r, O]), N.CPU = Q([l]), N.DEVICE = Q([a, i, e, m, s, T, t, D, le]), N.ENGINE = N.OS = Q([o, r]), n.exports && (d = n.exports = N), d.UAParser = N;
     var L = typeof h !== S && (h.jQuery || h.Zepto);
     if (L && !L.ua) {
       var W = new N();
@@ -1412,8 +1412,8 @@ var Re = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
           L.ua[u] = p[u];
       };
     }
-  })(typeof window == "object" ? window : Re);
-})(qe, Y);
+  })(typeof window == "object" ? window : qe);
+})(Re, Y);
 const Ue = Y, He = Ce({
   name: "addToHomescreen",
   props: {
@@ -1465,6 +1465,10 @@ const Ue = Y, He = Ce({
       type: String,
       required: !1
     },
+    ok: {
+      type: String,
+      required: !1
+    },
     titleColor: {
       type: String,
       required: !1
@@ -1513,27 +1517,27 @@ const Ue = Y, He = Ce({
     }, g = d("lang") || "en_GB", v = Pe[g], k = (l) => l.split(".").reduce((m, s) => {
       if (m)
         return m[s];
-    }, v), w = ye(), z = _(() => document.title), S = _(() => window.location.href), x = _(() => z.value.substring(0, 1)), j = ye(!1), A = () => {
+    }, v), w = ye(), z = q(() => document.title), S = q(() => window.location.href), x = q(() => z.value.substring(0, 1)), j = ye(!1), O = () => {
       let l = new Date();
       const m = n.expires || 365;
       l.setDate(l.getDate() + m), de.set("addToHomescreenCalled", "true", {
         expires: l
       });
-    }, a = _(() => {
+    }, a = q(() => {
       const l = d("iconColor"), m = d("iconPath"), s = d("iconTextColor");
       return {
         backgroundColor: l && typeof l == "string" ? l : "transparent",
         backgroundImage: m ? "url(" + d("iconPath") + ")" : "none",
         color: s && typeof s == "string" ? s : "black"
       };
-    }), o = _(() => {
+    }), o = q(() => {
       const l = d("buttonTextColor"), m = d("buttonColor");
       return {
         color: l && l === "string" ? l : "white",
         backgroundColor: m && typeof m == "string" ? m : "black"
       };
     }), e = () => {
-      A(), j.value = !1;
+      O(), j.value = !1;
     }, i = () => {
       const l = document.getElementById("IOSmodal");
       l && (l.style.display = "none");
@@ -1549,7 +1553,7 @@ const Ue = Y, He = Ce({
         m.preventDefault(), w.value = m;
       });
       const l = de.get("addToHomescreenCalled");
-      !_e() && !l && (j.value = !0, A());
+      !_e() && !l && (j.value = !0, O());
     }), {
       t: k,
       addToHomescreen: r,
@@ -1598,7 +1602,7 @@ function ri(n, d, h, g, v, k) {
             style: R(n.iconStyle)
           }, [
             n.getOpt("iconPath") ? Ae("", !0) : (Me(), ze(Le, { key: 0 }, [
-              se(q(n.firstCharTitle), 1)
+              se(A(n.firstCharTitle), 1)
             ], 64))
           ], 4)
         ]),
@@ -1606,7 +1610,7 @@ function ri(n, d, h, g, v, k) {
           M("span", {
             class: "app-title",
             style: R(n.getCssOpt("titleColor"))
-          }, q(n.getOpt("title") ? n.getOpt("title") : n.appTitle), 5),
+          }, A(n.getOpt("title") ? n.getOpt("title") : n.appTitle), 5),
           Ke,
           M("span", {
             class: "app-content",
@@ -1622,7 +1626,7 @@ function ri(n, d, h, g, v, k) {
               onClick: d[0] || (d[0] = (...w) => n.addToHomescreen && n.addToHomescreen(...w)),
               class: "add-button",
               style: R(n.buttonStyle)
-            }, q(n.getOpt("buttonText") || n.t("addToHomescreen")), 5)
+            }, A(n.getOpt("buttonText") || n.t("addToHomescreen")), 5)
           ])
         ])
       ]),
@@ -1635,11 +1639,11 @@ function ri(n, d, h, g, v, k) {
       M("div", ii, [
         M("ul", null, [
           M("li", null, [
-            se(q(n.getOpt("addMessagesIos1") || n.t("addMessages.ios1")) + " ", 1),
+            se(A(n.getOpt("addMessagesIos1") ? n.getOpt("addMessagesIos1") : n.t("addMessages.ios1")) + " ", 1),
             ai
           ]),
           M("li", null, [
-            se(q(n.getOpt("addMessagesIos2") || n.t("addMessages.ios2")) + " ", 1),
+            se(A(n.getOpt("addMessagesIos2") ? n.getOpt("addMessagesIos2") : n.t("addMessages.ios2")) + " ", 1),
             oi
           ])
         ]),
@@ -1648,7 +1652,7 @@ function ri(n, d, h, g, v, k) {
           style: R(n.buttonStyle),
           label: "OK",
           onClick: d[2] || (d[2] = (...w) => n.closeModal && n.closeModal(...w))
-        }, " OK ", 4)
+        }, A(n.getOpt("ok") ? n.getOpt("ok") : "OK"), 5)
       ])
     ])
   ]);
