@@ -7,6 +7,15 @@ interface Props {
   title?: string;
   content?: string;
   buttonText?: string;
+  addMessagesIos1?: string;
+  addMessagesIos2?: string;
+  addMessagesAndroid?: string;
+  addMessagesWindowsChrome?: string;
+  addMessagesWindowsFirefox?: string;
+  addMessagesMacosFirefox?: string;
+  addMessagesMacosChrome?: string;
+  addMessagesMacosSafari?: string;
+  addMessagesOthers?: string;
   titleColor?: string;
   contentColor?: string;
   iconPath?: string;
