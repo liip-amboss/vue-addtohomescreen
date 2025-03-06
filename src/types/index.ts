@@ -16,6 +16,7 @@ interface Props {
   addMessagesMacosChrome?: string;
   addMessagesMacosSafari?: string;
   addMessagesOthers?: string;
+  ok?: string;
   titleColor?: string;
   contentColor?: string;
   iconPath?: string;

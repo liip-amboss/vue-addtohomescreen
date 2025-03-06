@@ -46,11 +46,11 @@
       <div class="modal-content">
         <ul>
           <li>
-            {{ getOpt('addMessagesIos1') || t('addMessages.ios1') }}
+            {{ getOpt('addMessagesIos1') ? getOpt('addMessagesIos1') : t('addMessages.ios1') }}
             <img class="shareIOS" src="./assets/shareios.svg" alt="share IOS" />
           </li>
           <li>
-            {{ getOpt('addMessagesIos2') ||  t('addMessages.ios2') }}
+            {{ getOpt('addMessagesIos2') ? getOpt('addMessagesIos2') :  t('addMessages.ios2') }}
             <img class="addIOS" src="./assets/addios.svg" alt="add IOS" />
           </li>
         </ul>
@@ -60,7 +60,7 @@
           label="OK"
           @click="closeModal"
         >
-          OK
+          {{ getOpt('ok') ? getOpt('ok') : 'OK' }}
         </button>
       </div>
     </div>
@@ -125,6 +125,10 @@ export default defineComponent({
       required: false,
     },
     addMessagesOthers: {
+      type: String,
+      required: false,
+    },
+    ok: {
       type: String,
       required: false,
     },
