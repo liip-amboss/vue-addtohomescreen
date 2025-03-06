@@ -88,6 +88,10 @@ export default defineComponent({
       type: String,
       required: false,
     },
+    addToHomescreenText: {
+      type: String,
+      required: false,
+    },
     titleColor: {
       type: String,
       required: false,
